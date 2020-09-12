@@ -4,7 +4,7 @@
 (function() {
 
   var cl = new cloudinary.Cloudinary({cloud_name: "des7ayfwu", secure: true});
-  var audi = cl.imageTag('logos/audi', {effect: "colorize", color: "white", height: 12, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var audi = cl.imageTag('logos/audi', {effect: "colorize", color: "black", height: 12, quality: 100, crop: "scale", format: "png"}).toHtml();
 
 if (document.getElementById("img-band1")!==null) {
 document.getElementById("img-band1").innerHTML = audi;
