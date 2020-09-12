@@ -29,6 +29,7 @@
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.5.0",
     "choices.js": "^9.0.1",
+    "cloudinary-core": "^2.11.2",
     "countup.js": "^1.9.3",
     "dropzone": "^5.7.0",
     "flickity": "^2.2.1",
