@@ -13423,6 +13423,12 @@ body.compensate-for-scrollbar {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
+.flickity-slider {
+  display: flex; 
+  align-items: center;
+}
+
+
 .bg-dark .footer-brand {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1); }
