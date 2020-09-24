@@ -13419,11 +13419,6 @@ body.compensate-for-scrollbar {
 .flickity-viewport-visible .flickity-viewport {
   overflow: visible; }
 
-.flickity-slider {
-  display: flex; 
-  align-items: center;
-}
-
 [data-flickity*='"adaptiveHeight": true'] .flickity-viewport {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
@@ -13963,3 +13958,9 @@ body.compensate-for-scrollbar {
 @media (min-width: 992px) {
   .sidenav-right {
     right: 0; } }
+
+.flickity-slider {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center; }
