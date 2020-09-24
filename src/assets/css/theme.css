@@ -13419,15 +13419,14 @@ body.compensate-for-scrollbar {
 .flickity-viewport-visible .flickity-viewport {
   overflow: visible; }
 
-[data-flickity*='"adaptiveHeight": true'] .flickity-viewport {
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease; }
-
 .flickity-slider {
   display: flex; 
   align-items: center;
 }
 
+[data-flickity*='"adaptiveHeight": true'] .flickity-viewport {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
 
 .bg-dark .footer-brand {
   -webkit-filter: brightness(0) invert(1);
