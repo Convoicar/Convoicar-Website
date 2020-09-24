@@ -18,36 +18,6 @@
       "container": "container-fluid"
     })
 
-    <!-- WELCOME
-    ================================================== -->
-    <section class="py-10 py-md-14 overlay overlay-black overlay-60 bg-cover" style="background-image: url(assets/img/covers/cover-5.jpg);">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-            
-            <!-- Heading -->
-            <h1 class="display-2 font-weight-bold text-white">
-              We’re Here to Help.
-            </h1>
-
-            <!-- Text -->
-            <p class="lead text-white-75 mb-0">
-              We always want to hear from you! Let us know how we can best help you and we'll do our very best.
-            </p>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- SHAPE
-    ================================================== -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
-        @@include("assets/img/shapes/curves/curve-1.svg")
-      </div>
-    </div>
-
     <!-- INFO
     ================================================== -->
     <section class="py-7 py-md-9 border-bottom border-gray-300" id="info">
@@ -67,7 +37,7 @@
             
             <!-- Heading -->
             <h6 class="text-uppercase text-gray-700 mb-1">
-              Message us
+              Chat
             </h6>
 
             <!-- Link -->
@@ -82,13 +52,13 @@
             
             <!-- Heading -->
             <h6 class="text-uppercase text-gray-700 mb-1">
-              Call anytime
+              Tel
             </h6>
 
             <!-- Link -->
             <div class="mb-5 mb-md-0">
               <a href="#!" class="h4">
-                (555) 123-4567
+                (+33) 01 84 80 04 06
               </a>
             </div>
 
@@ -97,12 +67,12 @@
             
             <!-- Heading -->
             <h6 class="text-uppercase text-gray-700 mb-1">
-              Email us
+              Email
             </h6>
 
             <!-- Link -->
             <a href="#!" class="h4">
-              support@goodthemes.co
+              contact@convoicar.fr
             </a>
 
           </div>
@@ -113,82 +83,119 @@
     <!-- FORM
     ================================================== -->
     <section class="pt-8 pt-md-11 pb-8 pb-md-14">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
             
             <!-- Heading -->
             <h2 class="font-weight-bold">
-              Let us hear from you directly!
+              Contactez-nous !
             </h2>
 
             <!-- Text -->
-            <p class="font-size-lg text-muted mb-7 mb-md-9">
-              We always want to hear from you! Let us know how we can best help you and we'll do our very best.
+            <p class="font-size-lg text-muted mb-2 mb-md-3">
+              Vous êtes <b>automobiliste</b> et souhaitez bénéficier du service Convoicar ?
+            </p>
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-2 mb-md-3">
+              Vous êtes <b>professionnel</b> de l’automobile et souhaitez proposer le service Convoicar ?
+            </p>
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-9 mb-md-9">
+              Vous avez une remarque, des questions, des suggestions ?
             </p>
 
           </div>
         </div> <!-- / .row -->
+
         <div class="row justify-content-center">
           <div class="col-12 col-md-12 col-lg-10">
-            
+            <div class="container">
             <!-- Form -->
-            <form>
-              <div class="row">
-                <div class="col-12 col-md-6">
-                  <div class="form-group mb-5">
+              <form>
+                <div class="row">
+                  <div class="col-12 col-md-6">
                     
-                    <!-- Label -->
-                    <label for="contactName">
-                      Full name
-                    </label>
+                    <div class="form-group mb-5">
+                      <label for="contactName">
+                        Vous êtes ?
+                      </label>
+                      <select name="trade" class="form-control">
+                        <option>automobiliste</option>           
+                        <option>professionnel de l'auto</option>
+                        <option>autre</option>  
+                      </select>
+                    </div>
 
-                    <!-- Input -->
-                    <input type="text" class="form-control" id="contactName" placeholder="Full name">
+                    <div class="form-row mb-2">
+                      <!-- Label -->
+                      <div class="col">
+                        <label for="contactName">
+                          Votre prénom
+                        </label>
+                        <!-- Input -->
+                        <input type="text" name="prenom" class="form-control" id="contactName" placeholder="Prénom">
+                      </div>
+                      <div class="col">
+                        <label for="contactName">
+                          Votre nom
+                        </label>
+                        <!-- Input -->
+                        <input type="text" name="nom" class="form-control" id="contactName" placeholder="Nom">
+                      </div>
+                    </div>
+
+                    <div class="form-row mb-2">
+                      <!-- Label -->
+                      <div class="col">
+                        <label for="contactName">
+                          Votre email
+                        </label>
+                        <!-- Input -->
+                        <input type="text" name="prenom" class="form-control" id="contactName" placeholder="@">
+                      </div>
+                      <div class="col">
+                        <label for="contactName">
+                          Votre téléphone
+                        </label>
+                        <!-- Input -->
+                        <input type="text" name="nom" class="form-control" id="contactName" placeholder="+ 33 ..">
+                      </div>
+                    </div>
 
                   </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <div class="form-group mb-5">
-                    
-                    <!-- Label -->
-                    <label for="contactEmail">
-                      Email
-                    </label>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group mb-5">
+                      <!-- Label -->
+                      <label for="contactEmail">
+                        Sujet
+                      </label>
+                      <!-- Input -->
+                      <select name="trade" class="form-control">
+                        <option>Vous êtes automobiliste et souhaitez bénéficier du service Convoicar ?</option>           
+                        <option>Vous êtes concessionnaire et souhaitez proposer le service Convoicar ?</option>
+                        <option>Vous avez une remarque, des questions, des suggestions ?</option>  
+                      </select>
+                    </div>
 
-                    <!-- Input -->
-                    <input type="email" class="form-control" id="contactEmail" placeholder="hello@domain.com">
-
+                    <div class="form-group mb-5">
+                      <!-- Label -->
+                      <!-- Label -->
+                      <label for="contactMessage">
+                        Message
+                      </label>
+                      <!-- Input -->
+                      <textarea class="form-control" id="contactMessage" rows="5" placeholder="Message"></textarea>
+                    </div>
                   </div>
-                </div>
-              </div> <!-- / .row -->
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-group mb-7 mb-md-9">
-                    
-                    <!-- Label -->
-                    <label for="contactMessage">
-                      What can we help you with?
-                    </label>
-
-                    <!-- Input -->
-                    <textarea class="form-control" id="contactMessage" rows="5" placeholder="Tell us what we can help you with!"></textarea>
-
-                  </div>
-                </div>
-              </div> <!-- / .row -->
-              <div class="row justify-content-center">
-                <div class="col-auto">
-                  
-                  <!-- Submit -->
+                </div>  
+                <div class="row justify-content-center">
                   <button type="submit" class="btn btn-primary lift">
                     Send message
                   </button>
-
-                </div>
-              </div> <!-- / .row -->
-            </form>
-
+                </div> <!-- / .row -->
+              </form>
+            </div> 
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
