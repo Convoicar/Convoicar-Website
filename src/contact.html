@@ -18,7 +18,142 @@
       "container": "container-fluid"
     })
 
-    <!-- INFO
+    <!-- FORM
+    ================================================== -->
+    <section class="pt-8 pt-md-11 pb-8 pb-md-14">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            
+            <!-- Heading -->
+            <h2 class="font-weight-bold">
+              Contactez l'équipe Convoicar
+            </h2>
+
+             <!-- Text -->
+            <p class="font-size-lg text-muted mb-2 mb-md-3">
+              Vous êtes <b>professionnel</b> de l’automobile et souhaitez proposer les services Convoicar à vos clients ?
+            </p>
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-2 mb-md-3">
+              Vous êtes <b>gestionnaire de flotte</b> et souhaitez utiliser les services Convoicar pour votre flotte ?
+            </p>
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-2 mb-md-3">
+              Vous êtes <b>automobiliste</b> et souhaitez bénéficier du service Convoicar ?
+            </p>
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-9 mb-md-9">
+              Vous avez une remarque, des questions, des suggestions ?
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-12 col-lg-10">
+            <div class="container">
+            <!-- Form -->
+              <form>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    
+                    <div class="form-group mb-5">
+                      <label for="contactName">
+                        Vous êtes ?
+                      </label>
+                      <select name="trade" class="form-control">        
+                        <option>professionnel de l'auto</option>
+                        <option>gestionnaire de flotte</option>
+                        <option>automobiliste</option>   
+                        <option>autre</option>  
+                      </select>
+                    </div>
+
+                    <div class="form-row mb-2">
+                      <!-- Label -->
+                      <div class="col">
+                        <label for="contactName">
+                          Votre prénom
+                        </label>
+                        <!-- Input -->
+                        <input type="text" name="prenom" class="form-control" id="contactName" placeholder="Prénom">
+                      </div>
+                      <div class="col">
+                        <label for="contactName">
+                          Votre nom
+                        </label>
+                        <!-- Input -->
+                        <input type="text" name="nom" class="form-control" id="contactName" placeholder="Nom">
+                      </div>
+                    </div>
+
+                    <div class="form-row mb-2">
+                      <!-- Label -->
+                      <div class="col">
+                        <label for="contactName">
+                          Votre email
+                        </label>
+                        <!-- Input -->
+                        <input type="text" name="prenom" class="form-control" id="contactName" placeholder="@">
+                      </div>
+                      <div class="col">
+                        <label for="contactName">
+                          Votre téléphone
+                        </label>
+                        <!-- Input -->
+                        <input type="text" name="nom" class="form-control" id="contactName" placeholder="+ 33 ..">
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group mb-5">
+                      <!-- Label -->
+                      <label for="contactEmail">
+                        Sujet
+                      </label>
+                      <!-- Input -->
+                      <select name="trade" class="form-control">
+                        <option>Je souhaite proposer les services Convoicar à mes clients</option>           
+                        <option>Je souhaite utiliser les services Convoicar pour ma flotte de véhicules</option>
+                        <option>J'aimerais bénéficier du service pour mon véhicule personnel</option>
+                        <option>J'ai une remarque, question, ou suggestions</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group mb-5">
+                      <!-- Label -->
+                      <!-- Label -->
+                      <label for="contactMessage">
+                        Message
+                      </label>
+                      <!-- Input -->
+                      <textarea class="form-control" id="contactMessage" rows="5" placeholder="Message"></textarea>
+                    </div>
+                  </div>
+                </div>  
+                <div class="row justify-content-center">
+                  <button type="submit" class="btn btn-primary lift">
+                    Découvrir Convoicar
+                  </button>
+                </div> <!-- / .row -->
+              </form>
+            </div> 
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+     <!-- INFO
     ================================================== -->
     <section class="py-7 py-md-9 border-bottom border-gray-300" id="info">
       <div class="container">
@@ -79,135 +214,6 @@
         </div> <!-- / .row -->
       </div>
     </section>
-
-    <!-- FORM
-    ================================================== -->
-    <section class="pt-8 pt-md-11 pb-8 pb-md-14">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-            
-            <!-- Heading -->
-            <h2 class="font-weight-bold">
-              Contactez-nous !
-            </h2>
-
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-2 mb-md-3">
-              Vous êtes <b>automobiliste</b> et souhaitez bénéficier du service Convoicar ?
-            </p>
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-2 mb-md-3">
-              Vous êtes <b>professionnel</b> de l’automobile et souhaitez proposer le service Convoicar ?
-            </p>
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-9 mb-md-9">
-              Vous avez une remarque, des questions, des suggestions ?
-            </p>
-
-          </div>
-        </div> <!-- / .row -->
-
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-12 col-lg-10">
-            <div class="container">
-            <!-- Form -->
-              <form>
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    
-                    <div class="form-group mb-5">
-                      <label for="contactName">
-                        Vous êtes ?
-                      </label>
-                      <select name="trade" class="form-control">
-                        <option>automobiliste</option>           
-                        <option>professionnel de l'auto</option>
-                        <option>autre</option>  
-                      </select>
-                    </div>
-
-                    <div class="form-row mb-2">
-                      <!-- Label -->
-                      <div class="col">
-                        <label for="contactName">
-                          Votre prénom
-                        </label>
-                        <!-- Input -->
-                        <input type="text" name="prenom" class="form-control" id="contactName" placeholder="Prénom">
-                      </div>
-                      <div class="col">
-                        <label for="contactName">
-                          Votre nom
-                        </label>
-                        <!-- Input -->
-                        <input type="text" name="nom" class="form-control" id="contactName" placeholder="Nom">
-                      </div>
-                    </div>
-
-                    <div class="form-row mb-2">
-                      <!-- Label -->
-                      <div class="col">
-                        <label for="contactName">
-                          Votre email
-                        </label>
-                        <!-- Input -->
-                        <input type="text" name="prenom" class="form-control" id="contactName" placeholder="@">
-                      </div>
-                      <div class="col">
-                        <label for="contactName">
-                          Votre téléphone
-                        </label>
-                        <!-- Input -->
-                        <input type="text" name="nom" class="form-control" id="contactName" placeholder="+ 33 ..">
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="form-group mb-5">
-                      <!-- Label -->
-                      <label for="contactEmail">
-                        Sujet
-                      </label>
-                      <!-- Input -->
-                      <select name="trade" class="form-control">
-                        <option>Vous êtes automobiliste et souhaitez bénéficier du service Convoicar ?</option>           
-                        <option>Vous êtes concessionnaire et souhaitez proposer le service Convoicar ?</option>
-                        <option>Vous avez une remarque, des questions, des suggestions ?</option>  
-                      </select>
-                    </div>
-
-                    <div class="form-group mb-5">
-                      <!-- Label -->
-                      <!-- Label -->
-                      <label for="contactMessage">
-                        Message
-                      </label>
-                      <!-- Input -->
-                      <textarea class="form-control" id="contactMessage" rows="5" placeholder="Message"></textarea>
-                    </div>
-                  </div>
-                </div>  
-                <div class="row justify-content-center">
-                  <button type="submit" class="btn btn-primary lift">
-                    Send message
-                  </button>
-                </div> <!-- / .row -->
-              </form>
-            </div> 
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- SHAPE
-    ================================================== -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
-        @@include("assets/img/shapes/curves/curve-1.svg")
-      </div>
-    </div>
 
     <!-- FOOTER
     ================================================== -->
