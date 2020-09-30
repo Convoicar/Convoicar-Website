@@ -5,16 +5,16 @@
 
   var cl = new cloudinary.Cloudinary({cloud_name: "des7ayfwu", secure: true});
 
-  var audi = cl.imageTag('convoicar_website/audi_s5wkiy', {effect: "colorize", color: "white", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
-  var pld = cl.imageTag('convoicar_website/pld-tr_ga0rxv', {effect: "colorize", color: "white", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
-  var topgarage = cl.imageTag('convoicar_website/topgarage_j5vofs', {effect: "colorize", color: "white", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
-  var lexus = cl.imageTag('convoicar_website/lexus_pcqxzs', {effect: "colorize", color: "white", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
-  var centralauto = cl.imageTag('convoicar_website/centralauto_thfmj3', {effect: "colorize", color: "white", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
-  var vwvu = cl.imageTag('convoicar_website/vwvu_c875ni', {effect: "colorize", color: "white", height: 70, quality: 100, crop: "scale", format: "png"}).toHtml();
-  var vw = cl.imageTag('convoicar_website/vw_bt0oor', {effect: "colorize", color: "white", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
-  var toyota = cl.imageTag('convoicar_website/toyota', {effect: "colorize", color: "white", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
-  var seat = cl.imageTag('convoicar_website/seat_uoveak', {effect: "colorize", color: "white", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
-  var neubauer = cl.imageTag('convoicar_website/neubauer_dp6040', {effect: "colorize", color: "white", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var audi = cl.imageTag('convoicar_website/audi_s5wkiy', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var pld = cl.imageTag('convoicar_website/pld-tr_ga0rxv', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var topgarage = cl.imageTag('convoicar_website/topgarage_j5vofs', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var lexus = cl.imageTag('convoicar_website/lexus_pcqxzs', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var centralauto = cl.imageTag('convoicar_website/centralauto_thfmj3', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var vwvu = cl.imageTag('convoicar_website/vwvu_c875ni', {effect: "colorize", color: "#2EAADC", height: 70, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var vw = cl.imageTag('convoicar_website/vw_bt0oor', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var toyota = cl.imageTag('convoicar_website/toyota', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var seat = cl.imageTag('convoicar_website/seat_uoveak', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var neubauer = cl.imageTag('convoicar_website/neubauer_dp6040', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
 
 if (document.getElementById("img-band1")!==null) {
 document.getElementById("img-band1").innerHTML = audi;

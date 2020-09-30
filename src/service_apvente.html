@@ -255,36 +255,15 @@
   </div> <!-- / .container -->
 </section>
 
-    <!-- CTA
+    <!-- REGISTRATION
     ================================================== -->
-    <section class="py-10 py-md-13 bg-gray-200 bg-between" style="background-image: url(assets/img/illustrations/illustration-1-cropped.png), url(assets/img/illustrations/illustration-3-cropped.png);">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-            
-            <!-- Heading -->
-            <h2 class="font-weight-bold">
-              Try Landkit for free anytime, anywhere.
-            </h2>
-
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-8 px-lg-9">
-              We can help you build a better business faster. Tried and true systems for projects small and large.
-            </p>
-
-            <!-- Button -->
-            <a href="#!" class="btn btn-primary-desat lift">
-              Get started for free
-            </a>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
+    <section class="py-11">
+      @@include("partials/formulaire.html")
     </section>
 
-    <!-- SHAPE
+    <!-- CURVE
     ================================================== -->
-    <div class="position-relative">
+    <div class="position-relative mt-n16">
       <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
         @@include("assets/img/shapes/curves/curve-1.svg")
       </div>
@@ -292,9 +271,11 @@
 
     <!-- FOOTER
     ================================================== -->
-    @@include("partials/footer.html", {
-      "classList": "bg-dark"
-    })
+    <section class="pt-16 bg-dark">
+      @@include("partials/footer.html", {
+        "classList": "bg-dark border-top border-gray-800-50"
+      })
+    </section>
 
     <!-- JAVASCRIPT
     ================================================== -->
