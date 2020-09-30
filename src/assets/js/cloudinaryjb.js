@@ -6,7 +6,7 @@
   var cl = new cloudinary.Cloudinary({cloud_name: "des7ayfwu", secure: true});
 
   var audi = cl.imageTag('convoicar_website/audi_s5wkiy', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
-  var firststop = cl.imageTag('convoicar_website/firststop_uku9rt', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var firststop = cl.imageTag('convoicar_website/firststop_uku9rt', {effect: "colorize", color: "#2EAADC", height: 40, quality: 100, crop: "scale", format: "png"}).toHtml();
   var topgarage = cl.imageTag('convoicar_website/topgarage_j5vofs', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
   var lexus = cl.imageTag('convoicar_website/lexus_pcqxzs', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
   var mini = cl.imageTag('convoicar_website/mini', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();

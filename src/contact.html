@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     @@include("partials/head.html", {
-      "pageTitle": "Landkit"
+      "pageTitle": "Contact"
     })
   </head>
   <body class="pt-10 bg-light">
@@ -18,119 +18,40 @@
       "container": "container-fluid"
     })
 
-    <!-- FORM
+    <!-- WELCOME
     ================================================== -->
-    <section class="pt-8 pt-md-11 pb-8 pb-md-14">
-      <div class="container-fluid">
+    <section class="py-10 py-md-14 bg-cover" style="background-image: url(assets/img/covers/convoicar-cover.jpg);">
+      <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
             
             <!-- Heading -->
-            <h2 class="font-weight-bold">
-              Contactez l'équipe Convoicar
-            </h2>
+            <h1 class="display-2 font-weight-bold text-white">
+              Nous sommes là pour vous aider
+            </h1>
 
-          </div>
-        </div> <!-- / .row -->
+            <!-- Text -->
+            <p class="lead text-white-75 mb-0">
+              We always want to hear from you! Let us know how we can best help you and we'll do our very best.
+            </p>
 
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-12 col-lg-10">
-            <div class="container">
-            <!-- Form -->
-              <form>
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    
-                    <div class="form-group mb-5">
-                      <label for="contactName">
-                        Vous êtes ?
-                      </label>
-                      <select name="trade" class="form-control">        
-                        <option>professionnel de l'auto</option>
-                        <option>gestionnaire de flotte</option>
-                        <option>automobiliste</option>   
-                        <option>autre</option>  
-                      </select>
-                    </div>
-
-                    <div class="form-row mb-2">
-                      <!-- Label -->
-                      <div class="col">
-                        <label for="contactName">
-                          Votre prénom
-                        </label>
-                        <!-- Input -->
-                        <input type="text" name="prenom" class="form-control" id="contactName" placeholder="Prénom">
-                      </div>
-                      <div class="col">
-                        <label for="contactName">
-                          Votre nom
-                        </label>
-                        <!-- Input -->
-                        <input type="text" name="nom" class="form-control" id="contactName" placeholder="Nom">
-                      </div>
-                    </div>
-
-                    <div class="form-row mb-2">
-                      <!-- Label -->
-                      <div class="col">
-                        <label for="contactName">
-                          Votre email
-                        </label>
-                        <!-- Input -->
-                        <input type="text" name="prenom" class="form-control" id="contactName" placeholder="@">
-                      </div>
-                      <div class="col">
-                        <label for="contactName">
-                          Votre téléphone
-                        </label>
-                        <!-- Input -->
-                        <input type="text" name="nom" class="form-control" id="contactName" placeholder="+ 33 ..">
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="form-group mb-5">
-                      <!-- Label -->
-                      <label for="contactEmail">
-                        Sujet
-                      </label>
-                      <!-- Input -->
-                      <select name="trade" class="form-control">
-                        <option>Je souhaite proposer les services Convoicar à mes clients</option>           
-                        <option>Je souhaite utiliser les services Convoicar pour ma flotte de véhicules</option>
-                        <option>J'aimerais bénéficier du service pour mon véhicule personnel</option>
-                        <option>J'ai une remarque, question, ou suggestions</option>
-                      </select>
-                    </div>
-
-                    <div class="form-group mb-5">
-                      <!-- Label -->
-                      <!-- Label -->
-                      <label for="contactMessage">
-                        Message
-                      </label>
-                      <!-- Input -->
-                      <textarea class="form-control" id="contactMessage" rows="5" placeholder="Message"></textarea>
-                    </div>
-                  </div>
-                </div>  
-                <div class="row justify-content-center">
-                  <button type="submit" class="btn btn-primary lift">
-                    Découvrir Convoicar
-                  </button>
-                </div> <!-- / .row -->
-              </form>
-            </div> 
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
 
-     <!-- INFO
+    <!-- SHAPE
     ================================================== -->
-    <section class="py-7 py-md-9 border-bottom border-gray-300" id="info">
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+    
+  <!-- INFO
+    ================================================== -->
+    <section class="py-3 py-md-4 border-bottom border-gray-300" id="info">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -189,10 +110,15 @@
         </div> <!-- / .row -->
       </div>
     </section>
-
-    <!-- SHAPE
+    <!-- REGISTRATION
     ================================================== -->
-    <div class="position-relative">
+    <section class="py-5">
+      @@include("partials/formulaire.html")
+    </section>
+
+    <!-- CURVE
+    ================================================== -->
+    <div class="position-relative mt-n16">
       <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
         @@include("assets/img/shapes/curves/curve-1.svg")
       </div>
@@ -200,9 +126,11 @@
 
     <!-- FOOTER
     ================================================== -->
-    @@include("partials/footer.html", {
-      "classList": "bg-dark"
-    })
+    <section class="pt-16 bg-dark">
+      @@include("partials/footer.html", {
+        "classList": "bg-dark border-top border-gray-800-50"
+      })
+    </section>
 
     <!-- JAVASCRIPT
     ================================================== -->
