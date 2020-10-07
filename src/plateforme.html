@@ -33,7 +33,7 @@
 
             <!-- Text -->
             <p class="font-size-lg text-muted mb-5">
-              Une bête pour toutes vos courses
+              Une plateforme agile et simple d'utilisation, adaptée aux besoins métiers 
             </p>
 
             <!-- Button -->
@@ -50,13 +50,13 @@
 
                 <!-- iPhone -->
                 <div class="device device-iphonex">
-                  <img src="assets/img/screenshots/mobile/dashkit-alt.jpg" class="device-screen" alt="...">
+                  <img src="assets/img/ios.png" class="device-screen" alt="...">
                   <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
                 </div>
 
                 <!-- Macbook -->
                 <div class="device device-macbook">
-                  <img src="assets/img/screenshots/desktop/dashkit-alt.jpg" class="device-screen" alt="...">
+                  <img src="assets/img/ms.png" class="device-screen" alt="...">
                   <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="...">
                 </div>
                 
@@ -71,53 +71,21 @@
         <!-- CONTENT
     ================================================== -->z
     <div class="container" >
-      <div class="row my-10">
+
+      <div class="container-fluid text-center mt-12" >
+          <a class="badge badge-pill badge-primary mr-1 mb-1" href="#" data-toggle="pill" data-filter=".features" data-target="#portfolio">
+            <span class="h6 text-uppercase">Fonctionnalités</span>
+          </a>
+      </div>
+      <div class="row my-5">
         <!-- FONCTIONNALITES  -->
 
         <div class="col col-12" id="jb-toggle">
-                <div class="card card-border border-success shadow-lg">
+                <div class="card card-border border-primary shadow-lg">
                   <div class="card-body">    
                       <div class="list-group list-group-flush">
-                        <div class="list-group-item disabled d-flex align-items-center">
-                          <div class="icon m-2 p-2 text-white">
-                            @@include("./assets/img/icons/duotone-icons/Code/Code.svg")
-                          </div>
-                          <!-- Text -->
-                          <div class="mr-auto">
-                            <!-- Heading -->
-                            <a class="badge badge-pill badge-primary mr-1 mb-1" href="#" data-toggle="pill" data-filter=".features" data-target="#portfolio">
-                              <span class="h6 text-uppercase">Fonctionnalités</span>
-                            </a>
-                          </div>
-
-                        </div>
-
+                        
                         <!-- Fonctionnalités #1#  -->
-                        <div class="list-group-item-action d-flex align-items-center p-2">
-                          <div class="icon m-2 p-2 text-primary">
-                            @@include("./assets/img/icons/duotone-icons/Layout/Layout-grid.svg")
-                          </div>
-                          <!-- Text -->                
-                          <div class="mr-auto">
-                            <!-- Heading -->
-                            <p class="font-weight-bold mb-0">
-                              Connexion API/DMS.
-                            </p>
-                            <!-- Text -->
-                            <p class="font-size-sm text-muted mb-0">
-                              Connexion API avec vos outils. Connexion DMS. 
-                            </p>
-                          </div>
-                          <!-- Checks -->
-                          <div class="col-4 d-flex flex-row-reverse justify-content-around">
-                            <div class="custom-control custom-switch">
-                              <input type="checkbox" class="custom-control-input disabled">
-                              <label class="custom-control-label disabled" for="customSwitch2"></label>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Fonctionnalités #1#  -->
-                        <!-- Fonctionnalités #2#  -->
                         <div class="list-group-item-action d-flex align-items-center p-2">
                           <div class="icon m-2 p-2 text-primary">
                             @@include("./assets/img/icons/duotone-icons/Code/Code.svg")
@@ -135,12 +103,35 @@
                           </div>
                           <!-- Checks -->
                           <div class="col-4 d-flex flex-row-reverse justify-content-around">
-                            <div class="badge badge-dark text-center">
+                            <div class="badge badge-primary-soft text-center">
                               <i class="fe fe-check"></i>
                             </div>
                           </div>
                         </div>
                         <!-- Fonctionnalités #2#  -->
+                        <div class="list-group-item-action d-flex align-items-center p-2">
+                          <div class="icon m-2 p-2 text-primary">
+                            @@include("./assets/img/icons/duotone-icons/Layout/Layout-grid.svg")
+                          </div>
+                          <!-- Text -->                
+                          <div class="mr-auto">
+                            <!-- Heading -->
+                            <p class="font-weight-bold mb-0">
+                              Connexion API/DMS.
+                            </p>
+                            <!-- Text -->
+                            <p class="font-size-sm text-muted mb-0">
+                              Connexion API avec vos outils. Connexion DMS. 
+                            </p>
+                          </div>
+                          <!-- Checks -->
+                          <div class="col-4 d-flex flex-row-reverse justify-content-around">
+                            <div class="badge badge-primary-soft text-center">
+                              <i class="fe fe-check"></i>
+                            </div>
+                          </div>
+                        </div>
+
                         <!-- Fonctionnalités #3#  -->
                         <div class="list-group-item-action d-flex align-items-center p-2">
                           <div class="icon m-2 p-2 text-primary">
@@ -159,12 +150,12 @@
                           </div>
                           <!-- Checks -->
                           <div class="col-4 d-flex flex-row-reverse justify-content-around">
-                            <div class="badge badge-dark text-center">
+                            <div class="badge badge-primary-soft text-center">
                               <i class="fe fe-check"></i>
                             </div>
                           </div>
                         </div>
-                        <!-- Fonctionnalités #3#  -->
+                        
                         <!-- Fonctionnalités #4#  -->
                         <div class="list-group-item-action d-flex align-items-center p-2">
                           <div class="icon m-2 p-2 text-primary">
@@ -174,21 +165,21 @@
                           <div class="mr-auto">
                             <!-- Heading -->
                             <p class="font-weight-bold mb-0">
-                              Stockage des états des lieux
+                              Stockage des documents
                             </p>
                             <!-- Text -->
                             <p class="font-size-sm text-muted mb-0">
-                              Etats des lieux numériques stockés et accessibles  
+                              Etats des lieux et documents stockés et accessibles  
                             </p>
                           </div>
                           <!-- Checks -->
                           <div class="col-4 d-flex flex-row-reverse justify-content-around">
-                            <div class="badge badge-dark text-center">
+                            <div class="badge badge-primary-soft text-center">
                               <i class="fe fe-check"></i>
                             </div>
                           </div>
                         </div>
-                        <!-- Fonctionnalités #4#  -->
+
                         <!-- Fonctionnalités #5#  -->
                         <div class="list-group-item-action d-flex align-items-center p-2">
                           <div class="icon m-2 p-2 text-primary">
@@ -200,20 +191,16 @@
                             <p class="font-weight-bold mb-0">
                               Module de paiement
                             </p>
-                            <!-- Text -->
-                            <p class="font-size-sm text-muted mb-0">
-                              ...
-                            </p>
+                          
                           </div>
                           <!-- Checks -->
                           <div class="col-4 d-flex flex-row-reverse justify-content-around">
-                            <div class="custom-control custom-switch">
-                              <input type="checkbox" class="custom-control-input disabled">
-                              <label class="custom-control-label disabled" for="customSwitch2"></label>
+                            <div class="badge badge-primary-soft text-center">
+                              <i class="fe fe-check"></i>
                             </div>
                           </div>
                         </div>
-                        <!-- Fonctionnalités ##  -->
+                        
                         <!-- Fonctionnalités #6#  -->
                         <div class="list-group-item-action d-flex align-items-center p-2">
                           <div class="icon m-2 p-2 text-primary">
@@ -223,46 +210,23 @@
                           <div class="mr-auto">
                             <!-- Heading -->
                             <p class="font-weight-bold mb-0">
-                              Documents digitalisés
+                              App mobile pour les jockeys
                             </p>
                             <!-- Text -->
                             <p class="font-size-sm text-muted mb-0">
-                              GED
+                              Etats des lieux digitalisés et gestion des missions
                             </p>
                           </div>
                           <!-- Checks -->
                           <div class="col-4 d-flex flex-row-reverse justify-content-around">
-                            <div class="badge badge-dark text-center">
+                            <div class="badge badge-primary-soft text-center">
                               <i class="fe fe-check"></i>
                             </div>
                           </div>
                         </div>
-                        <!-- Fonctionnalités ##  -->
+                        
+                        
                         <!-- Fonctionnalités #7#  -->
-                        <div class="list-group-item-action d-flex align-items-center p-2">
-                          <div class="icon m-2 p-2 text-primary">
-                            @@include("./assets/img/icons/duotone-icons/Tools/Hummer.svg")
-                          </div>
-                          <!-- Text -->                
-                          <div class="mr-auto">
-                            <!-- Heading -->
-                            <p class="font-weight-bold mb-0">
-                              Suivi et analyse des courses
-                            </p>
-                            <!-- Text -->
-                            <p class="font-size-sm text-muted mb-0">
-                              Possibilité d'extraire les données en excel
-                            </p>
-                          </div>
-                          <!-- Checks -->
-                          <div class="col-4 d-flex flex-row-reverse justify-content-around">
-                            <div class="custom-control custom-switch">
-                              <input type="checkbox" class="custom-control-input disabled">
-                              <label class="custom-control-label disabled" for="customSwitch2"></label>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Fonctionnalités #8#  -->
                         <div class="list-group-item-action d-flex align-items-center p-2">
                           <div class="icon m-2 p-2 text-primary">
                             @@include("./assets/img/icons/duotone-icons/Devices/LTE#1.svg")
@@ -280,8 +244,8 @@
                           </div>
                           <!-- Checks -->
                           <div class="col-4 d-flex flex-row-reverse justify-content-around">
-                            <div class="badge badge-dark text-center">
-                              soon
+                            <div class="badge badge-primary-soft text-center">
+                              <i class="fe fe-check"></i>
                             </div>
                           </div>
                         </div>
