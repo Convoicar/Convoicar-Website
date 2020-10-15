@@ -19,7 +19,9 @@
   var alfaromeo = cl.imageTag('convoicar_website/alfaromeo', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
   var bmw = cl.imageTag('convoicar_website/bmw2', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
   var maserati = cl.imageTag('convoicar_website/maserati', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
-  var maserati = cl.imageTag('convoicar_website/Allianz.svg_qf2rvb', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var allianz = cl.imageTag('convoicar_website/Allianz.svg_qf2rvb', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var facemask = cl.imageTag('convoicar_website/facemask2', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var customerreview = cl.imageTag('convoicar_website/customerreview2', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
   
 
 if (document.getElementById("img-band1")!==null) {
@@ -65,7 +67,13 @@ if (document.getElementById("img-band14")!==null) {
 document.getElementById("img-band14").innerHTML = maserati;
 };
 if (document.getElementById("allianz")!==null) {
-  document.getElementById("allianz").innerHTML = maserati;
+  document.getElementById("allianz").innerHTML = allianz;
+};
+if (document.getElementById("facemask")!==null) {
+  document.getElementById("facemask").innerHTML = facemask;
+};
+if (document.getElementById("customerreview")!==null) {
+  document.getElementById("customerreview").innerHTML = customerreview;
 };
 
 })();
