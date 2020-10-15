@@ -19,6 +19,8 @@
   var alfaromeo = cl.imageTag('convoicar_website/alfaromeo', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
   var bmw = cl.imageTag('convoicar_website/bmw2', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
   var maserati = cl.imageTag('convoicar_website/maserati', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var maserati = cl.imageTag('convoicar_website/Allianz.svg_qf2rvb', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  
 
 if (document.getElementById("img-band1")!==null) {
 document.getElementById("img-band1").innerHTML = alfaromeo;
@@ -61,6 +63,9 @@ document.getElementById("img-band13").innerHTML = vwvu;
 };
 if (document.getElementById("img-band14")!==null) {
 document.getElementById("img-band14").innerHTML = maserati;
+};
+if (document.getElementById("allianz")!==null) {
+  document.getElementById("allianz").innerHTML = maserati;
 };
 
 })();
