@@ -19,9 +19,10 @@
   var alfaromeo = cl.imageTag('convoicar_website/alfaromeo', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
   var bmw = cl.imageTag('convoicar_website/bmw2', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
   var maserati = cl.imageTag('convoicar_website/maserati', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
-  var allianz = cl.imageTag('convoicar_website/Allianz.svg_qf2rvb', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
-  var facemask = cl.imageTag('convoicar_website/facemask2', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
-  var customerreview = cl.imageTag('convoicar_website/customerreview2', {effect: "colorize", color: "#2EAADC", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var allianz = cl.imageTag('convoicar_website/Allianz.svg_qf2rvb', {height: 18, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var facemask = cl.imageTag('convoicar_website/facemask2', {effect: "colorize", color: "#7BEACA", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
+  var customerreview = cl.imageTag('convoicar_website/5-stars', {effect: "colorize", color: "#7BEACA", height: 50, quality: 100, format: "png"}).toHtml();
+  var bouclier = cl.imageTag('convoicar_website/Assurance-icon', {effect: "colorize", color: "#7BEACA", height: 50, quality: 100, crop: "scale", format: "png"}).toHtml();
   
 
 if (document.getElementById("img-band1")!==null) {
@@ -74,6 +75,9 @@ if (document.getElementById("facemask")!==null) {
 };
 if (document.getElementById("customerreview")!==null) {
   document.getElementById("customerreview").innerHTML = customerreview;
+};
+if (document.getElementById("bouclier")!==null) {
+  document.getElementById("bouclier").innerHTML = bouclier;
 };
 
 })();
