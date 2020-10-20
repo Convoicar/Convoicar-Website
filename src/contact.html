@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    @@include("partials/head.html", {
+      "pageTitle": "Convoicar Contact"
+    })
+  </head>
+  <body class="pt-10 bg-light">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+    
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+      "classList": "navbar-light fixed-top bg-white border-bottom",
+      "container": "container-fluid"
+    })
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="py-10 py-md-14 bg-cover" style="background-image: url(assets/img/covers/convoicar-cover.jpg);">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            
+            <!-- Heading -->
+            <h1 class="display-2 font-weight-bold text-white">
+              Nous sommes là pour vous aider
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-white-75 mb-0">
+              Vous souhaitez une démo ? Vous avez une question, une remarque, une suggestion ? N'hésitez pas à nous contacter.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+    
+  <!-- INFO
+    ================================================== -->
+    <section class="py-3 py-md-4 border-gray-300" id="info">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            
+            <!-- Button -->
+            <a href="#info" class="btn btn-white btn-rounded-circle shadow mt-n11 mt-md-n13" data-toggle="smooth-scroll">
+              <i class="fe fe-arrow-down"></i>
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center">
+          
+          <div class="col-12 col-md-4 text-center">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Tel
+            </h6>
+
+            <!-- Link -->
+            <div class="mb-5 mb-md-0">
+              <a href="#!" class="h4">
+                (+33) 01 84 80 04 06
+              </a>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Email
+            </h6>
+
+            <!-- Link -->
+            <a href="#!" class="h4">
+              contact@convoicar.fr
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
+    </section>
+    <!-- REGISTRATION
+    ================================================== -->
+    <section class="py-5">
+      @@include("partials/formulaire.html")
+    </section>
+
+    <!-- CURVE
+    ================================================== -->
+    <div class="position-relative mt-n16">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+    <!-- FOOTER
+    ================================================== -->
+    <section class="pt-16 bg-dark">
+      @@include("partials/footer.html", {
+        "classList": "bg-dark border-top border-gray-800-50"
+      })
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+      
+  </body>
+</html>
