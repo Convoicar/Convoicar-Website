@@ -1,12 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
+    <link rel="canonical" href="https://convoicar.fr" />
     @@include("partials/head.html", {
       "pageTitle": "Convoicar, n1 du service jockey"
     })
   </head>
   <body class="bg-light">
-
+    <div id="cookies-eu-banner" style="display: none;">
+      By continuing your visit to this site, you accept the use of cookies by Google Analytics to make visits statistics.
+      <a href="./read-more.html" id="cookies-eu-more">Read more</a>
+      <button id="cookies-eu-reject">Reject</button>
+      <button id="cookies-eu-accept">Accept</button>
+    </div>
     <!-- MODALS
     ================================================== -->
     @@include("partials/modals.html")
@@ -61,7 +67,7 @@
     ================================================== -->
     <section class="py-6 py-md-8 bg-white">
       <div class="container">
-          <div class="flickity-viewport-visible" data-flickity='{"imagesLoaded": false, "initialIndex": 5, "pageDots": false, "prevNextButtons": false, "contain": true, "wrapAround": true, "fullscreen": true}'>
+          <div class="flickity-viewport-visible" data-flickity='{"imagesLoaded": false, "initialIndex": 5, "pageDots": false, "prevNextButtons": false, "contain": true, "wrapAround": true, "fullscreen": true, "autoPlay": true, "pauseAutoPlayOnHover": true}'>
             <div class="col-4 col-md-3 col-lg-2 p-0 text-center">
               <!-- Brand -->
               <div id = "img-band1" class="img-fluid svg-shim text-white">
@@ -172,7 +178,7 @@
             <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
 
               <!-- Image -->
-              <a class="card-img-top" href="@@webRoot/service_apvente.html">
+              <a class="card-img-top" href="@@webRoot/convoicar-pour-les-automobilistes">
 
                 <!-- Image -->
                 <img src="assets/img/jockey_apv.png" alt="..." class="card-img-top">
@@ -187,7 +193,7 @@
               </a>
 
               <!-- Body -->
-              <a class="card-body" href="@@webRoot/service_apvente.html">
+              <a class="card-body text-center" href="@@webRoot/convoicar-pour-les-automobilistes">
 
                 <!-- Heading -->
                 <h3>
@@ -210,7 +216,7 @@
             <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
 
               <!-- Image -->
-              <a class="card-img-top" href="#!">
+              <a class="card-img-top" href="@@webRoot/service-de-livraison-de-vehicule">
 
                 <!-- Image -->
                 <img src="assets/img/jockey_livraison.png" alt="..." class="card-img-top">
@@ -225,7 +231,7 @@
               </a>
 
               <!-- Body -->
-              <a class="card-body" href="@@webRoot/service_livraison.html">
+              <a class="card-body text-center" href="@@webRoot/service-de-livraison-de-vehicule">
 
                 <!-- Heading -->
                 <h3>
@@ -247,7 +253,7 @@
             <div class="card mb-6 mb-md-0 shadow-light-lg lift lift-lg">
 
               <!-- Image -->
-              <a class="card-img-top" href="@@webRoot/service_carsharing.html">
+              <a class="card-img-top" href="@@webRoot/convoicar-pour-les-entreprises">
 
                 <!-- Image -->
                 <img src="assets/img/jockey_transfert.png" alt="..." class="card-img-top">
@@ -262,7 +268,7 @@
               </a>
 
               <!-- Body -->
-              <a class="card-body" href="@@webRoot/service_carsharing.html">
+              <a class="card-body text-center" href="@@webRoot/convoicar-pour-les-entreprises">
 
                 <!-- Heading -->
                 <h3>

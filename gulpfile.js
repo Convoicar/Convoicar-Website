@@ -93,6 +93,36 @@ gulp.task('browsersync', function(callback) {
     server: {
       baseDir: [paths.src.tmp.dir, paths.src.base.dir, paths.base.base.dir]
     },
+    middleware: function(req,res,next) {
+      if (req.url === '/devenir-jockey') {
+        req.url = '/devenir-jockey.html';
+      } else if (req.url === '/les-jockeys') {
+        req.url = '/jockey.html';
+      } else if (req.url === '/la-plateforme') {
+        req.url = '/plateforme.html';
+      } else if (req.url === '/convoicar-pour-les-entreprises') {
+        req.url = '/service_carsharing.html';
+      } else if (req.url === '/service-de-livraison-de-vehicule') {
+        req.url = '/service_livraison.html';
+      } else if (req.url === '/service-de-jockey-apres-vente') {
+        req.url = '/service_apvente.html';
+      } else if (req.url === '/qui-sommes-nous') {
+        req.url = '/about.html';
+      } else if (req.url === '/convoicar-pour-les-automobilistes') {
+        req.url = '/service_apvente.html';
+      } else if (req.url === '/recrutement-chauffeurs/convoicar-jockeys') {
+        req.url = '/devenir-jockey.html';
+      } else if (req.url === '/qui-sommes-nous/presentation-convoicar') {
+        req.url = '/about.html';
+      } else if (req.url === '/convoicar-pour-les-pros/logo-en-ligne-convoicar') {
+        req.url = '/service_apvente.html';
+      } else if (req.url === '/contact') {
+        req.url = '/contact.html';
+      } else if (req.url === '/convoicar-pour-les-pros/main/') {
+        req.url = '/service_apvente.html';
+      }     
+      return next();
+    }
   });
   callback();
 });
@@ -211,3 +241,4 @@ gulp.task('html:preview', function() {
 gulp.task('build', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html'));
 gulp.task('build:preview', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html:preview'));
 gulp.task('default', gulp.series(gulp.parallel('fileinclude', 'scss'), gulp.parallel('browsersync', 'watch')));
+
