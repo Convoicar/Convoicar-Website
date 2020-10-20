@@ -97,29 +97,29 @@ gulp.task('browsersync', function(callback) {
       if (req.url === '/devenir-jockey') {
         req.url = '/devenir-jockey.html';
       } else if (req.url === '/les-jockeys') {
-        req.url = '/jockey.html';
+        req.url = '/les-jockeys.html';
       } else if (req.url === '/la-plateforme') {
-        req.url = '/plateforme.html';
+        req.url = '/la-plateforme.html';
       } else if (req.url === '/convoicar-pour-les-entreprises') {
-        req.url = '/service_carsharing.html';
+        req.url = '/convoicar-pour-les-entreprises.html';
       } else if (req.url === '/service-de-livraison-de-vehicule') {
-        req.url = '/service_livraison.html';
+        req.url = '/service-de-livraison-de-vehicule.html';
       } else if (req.url === '/service-de-jockey-apres-vente') {
-        req.url = '/service_apvente.html';
+        req.url = '/service-de-jockey-apres-vente.html';
       } else if (req.url === '/qui-sommes-nous') {
-        req.url = '/about.html';
+        req.url = '/qui-sommes-nous.html';
       } else if (req.url === '/convoicar-pour-les-automobilistes') {
-        req.url = '/service_apvente.html';
+        req.url = '/service-de-jockey-apres-vente.html';
       } else if (req.url === '/recrutement-chauffeurs/convoicar-jockeys') {
         req.url = '/devenir-jockey.html';
       } else if (req.url === '/qui-sommes-nous/presentation-convoicar') {
-        req.url = '/about.html';
+        req.url = '/qui-sommes-nous.html';
       } else if (req.url === '/convoicar-pour-les-pros/logo-en-ligne-convoicar') {
-        req.url = '/service_apvente.html';
+        req.url = '/service-de-jockey-apres-vente.html';
       } else if (req.url === '/contact') {
         req.url = '/contact.html';
       } else if (req.url === '/convoicar-pour-les-pros/main/') {
-        req.url = '/service_apvente.html';
+        req.url = '/service-de-jockey-apres-vente.html';
       }     
       return next();
     }
