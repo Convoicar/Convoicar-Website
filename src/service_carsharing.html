@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    @@include("partials/head.html", {
+      "pageTitle": "Convoicar : l'auto-partage"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+    
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+      "classList": "navbar-light",
+      "container": "container-fluid"
+    })
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="position-relative pt-12 pt-md-14 mt-n11">
+
+      <!-- Shape -->
+      <div class="shape shape-fluid-x shape-blur-2 svg-shim text-light">
+        @@include("assets/img/shapes/blurs/blur-2.svg")
+      </div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row align-items-center text-center text-md-left">
+          <div class="col-12 col-md-6">
+            
+            <!-- Image -->
+            <img src="assets/img/jockey_transfert.png" alt="..." class="img-fluid mw-130 float-right mb-6 mb-md-0" data-aos="fade-right">
+
+          </div>
+          <div class="col-12 col-md-6">
+            
+            <!-- Heading -->
+            <h1 class="display-4">
+              Service de jockey pour<br>
+              <span class="text-primary"> l'auto-partage</span>
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-0 text-justify" data-aos="fade-left" data-aos-delay="200">
+              Vous avez des besoins en transfert inter-sites ou rééquilibrage de parc ? Convoicar vous met à disposition ses jockeys.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+        <!-- BENEFITS
+    ================================================== -->
+    <section class="py-8 py-md-11">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-md-5 order-md-2">
+            
+            <!-- Badge -->
+            <span class="badge badge-primary-soft badge-pill mb-3">
+              <span class="h6 text-uppercase">
+                Bénéfices
+              </span>
+            </span>
+
+            <!-- Heading -->
+            <h2>
+              Gestion 100% digitale<br>
+              <span class="text-primary">pour les gestionnaires de flottes</span>.
+            </h2>
+
+            <!-- Text -->
+            <!-- <p class="font-size-lg text-muted mb-6 mb-md-0">
+              We put our money where our mouthes are. Once you're part of our team, we're going to take the best possible care of you with tons of benefits and perks unavailable anywhere else.
+            </p> -->
+
+          </div>
+          <div class="col-12 col-md-6 order-md-1">
+            
+            <!-- Card -->
+            <div class="card card-border border-primary shadow-lg">
+              <div class="card-body">
+                
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item d-flex align-items-center">
+                    
+                    <!-- Text -->
+                    <div class="mr-auto">
+                      
+                      <!-- Heading -->
+                      <p class="font-weight-bold mb-1">
+                        Gestion digitalisée
+                      </p>
+
+                      <!-- Text -->
+                      <!-- <p class="font-size-sm text-muted mb-0">
+                        Health, dental, vision, 401k, and more.
+                      </p> -->
+
+                    </div>
+                      
+                    <!-- Check -->
+                    <div class="badge badge-rounded-circle badge-primary-soft ml-4">
+                      <i class="fe fe-check"></i>
+                    </div>
+
+                  </div>
+                  <div class="list-group-item d-flex align-items-center">
+                      
+                    <!-- Text -->                
+                    <div class="mr-auto">
+                      
+                      <!-- Heading -->
+                      <p class="font-weight-bold mb-1">
+                        Equilibrage de votre parc
+                      </p>
+
+                      <!-- Text -->
+                      <!-- <p class="font-size-sm text-muted mb-0">
+                        Vacation on your own terms.
+                      </p> -->
+
+                    </div>
+                      
+                    <!-- Check -->
+                    <div class="badge badge-rounded-circle badge-primary-soft ml-4">
+                      <i class="fe fe-check"></i>
+                    </div>
+
+                  </div>
+                  <div class="list-group-item d-flex align-items-center">
+                      
+                    <!-- Text -->
+                    <div class="mr-auto">
+                      
+                      <!-- Heading -->
+                      <p class="font-weight-bold mb-1">
+                        Réactivité et flexibilité
+                      </p>
+
+                      <!-- Text -->
+                      <!-- <p class="font-size-sm text-muted mb-0">
+                        We provide brand new computers and phones.
+                      </p> -->
+
+                    </div>
+                      
+                    <!-- Check -->
+                    <div class="badge badge-rounded-circle badge-primary-soft ml-4">
+                      <i class="fe fe-check"></i>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- ================================================== --> 
+    <!-- BLOC GARANTIES
+================================================== -->
+<section class="py-8 py-md-11">
+  @@include("partials/garanties.html")
+</section>
+
+    <!-- REGISTRATION
+    ================================================== -->
+    <section class="py-11">
+      @@include("partials/formulaire.html")
+    </section>
+
+    <!-- CURVE
+    ================================================== -->
+    <div class="position-relative mt-n16">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+    <!-- FOOTER
+    ================================================== -->
+    <section class="pt-16 bg-dark">
+      @@include("partials/footer.html", {
+        "classList": "bg-dark border-top border-gray-800-50"
+      })
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+      
+  </body>
+</html>
