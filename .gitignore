@@ -2,4 +2,3 @@ node_modules/
 dist/
 src/.tmp/
 .DS_Store
-.publish/assets/libs/imagesloaded/sandbox/background/index.html
