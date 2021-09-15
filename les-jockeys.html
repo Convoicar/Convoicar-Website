@@ -43,6 +43,8 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 
 
   </head>
@@ -648,6 +650,7 @@
     <!-- Libs JS -->
     <script src="https://cmp.osano.com/AzZcpNSDwYyRz3UA5/41b1be66-bc64-43ec-a663-2ab627acbaf2/osano.js"></script>
 
+
     <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
@@ -675,6 +678,21 @@
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#eaf7f7",
+          "text": "#5c7291"
+        },
+        "button": {
+          "background": "#2EAADC",
+          "text": "#ffffff"
+        }
+      }
+    });
+    </script>
       
   </body>
 </html>
