@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    @@include("partials/head.html", {
+      "pageTitle": "Convoicar : l'auto-partage"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+    
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+      "classList": "navbar-light",
+      "container": "container-fluid"
+    })
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="position-relative pt-12 pt-md-14 mt-n11">
+
+      <!-- Shape -->
+      <div class="shape shape-fluid-x shape-blur-2 svg-shim text-light">
+        @@include("assets/img/shapes/blurs/blur-2.svg")
+      </div>
+
+       <!-- Content -->
+       <div class="container">
+        <div class="row align-items-center text-center text-md-left">
+          
+          <div class="col-12 col-md-6">
+             <!-- Heading --> 
+            <h1 class="display-4">
+              PRÉSENTATION DU VÉHICULE<br>
+              <span class="text-primary"> PAR UN GENIUS</span>
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted text-justify mb-0" data-aos="fade-left" data-aos-delay="200">
+              Pour une présentation complète et à distance d’un
+              véhicule neuf, nous avons mit en place un outil qui
+              permet à votre client de recevoir une proposition de
+              présentation en ligne du véhicule, il choisi son
+              créneau d’une durée de 30 min (temps de la
+              présentation). Puis des supports vidéos / documents
+              complémentaires lui sont envoyés par mail.            </p>
+
+          </div>
+          <div class="col-12 col-md-6">
+            
+            <!-- Image -->
+            <div class="device device-iphonex">
+              <img src="assets/img/screen.png" alt="convoicar service de jockey après vente" class="device-screen">
+              <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+            </div>
+            
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+       <!-- BENEFITS
+    ================================================== -->
+    <section class="py-8 py-md-11">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-md-5 order-md-2">
+            
+            <!-- Badge -->
+            <span class="badge badge-pill badge-primary-soft mb-3">
+              <span class="h6 text-uppercase">Bénéfices</span>
+            </span>
+
+            <!-- Heading -->
+            <h2>
+              Une présentation digitale réalisée en 
+              <span class="text-primary">30 minutes par un Genius</span>
+            </h2>
+
+            <!-- Text -->
+            <!-- <p class="font-size-lg text-muted mb-6 mb-md-0">
+              We put our money where our mouthes are. Once you're part of our team, we're going to take the best possible care of you with tons of benefits and perks unavailable anywhere else.
+            </p> -->
+
+          </div>
+          <div class="col-12 col-md-6 order-md-1">
+            
+            <!-- Card -->
+            <div class="card card-border border-primary shadow-lg">
+              <div class="card-body">
+                
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item d-flex align-items-center">
+                    
+                    <!-- Text -->
+                    <div class="mr-auto">
+                      
+                      <!-- Heading -->
+                      <p class="font-weight-bold mb-1">
+                        Une présentation complète et à distance
+                      </p>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Explications des fonctionnalités du véhicules (tableau de bord, connectivité, etc.)
+                      </p>
+
+                    </div>
+                      
+                    <!-- Check -->
+                    <div class="badge badge-rounded-circle badge-primary-soft ml-4">
+                      <i class="fe fe-check"></i>
+                    </div>
+
+                  </div>
+                  <div class="list-group-item d-flex align-items-center">
+                      
+                    <!-- Text -->                
+                    <div class="mr-auto">
+                      
+                      <!-- Heading -->
+                      <p class="font-weight-bold mb-1">
+                        Un complément d’informations
+                      </p>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Des supports documents/vidéos sont envoyés suite à la présentation.
+                      </p>
+
+                    </div>
+                      
+                    <!-- Check -->
+                    <div class="badge badge-rounded-circle badge-primary-soft ml-4">
+                      <i class="fe fe-check"></i>
+                    </div>
+
+                  </div>
+                  <div class="list-group-item d-flex align-items-center">
+                      
+                    <!-- Text -->
+                    <div class="mr-auto">
+                      
+                      <!-- Heading -->
+                      <p class="font-weight-bold mb-1">
+                        Questions/réponses
+                      </p>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Mise en place d’un système d’échange pour répondre aux questions du client.
+                      </p>
+
+                    </div>
+                      
+                    <!-- Check -->
+                    <div class="badge badge-rounded-circle badge-primary-soft ml-4">
+                      <i class="fe fe-check"></i>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- ================================================== --> 
+    <!-- BLOC GARANTIES
+================================================== -->
+<section class="py-8 py-md-11">
+  @@include("partials/garanties.html")
+</section>
+
+    <!-- REGISTRATION
+    ================================================== -->
+    <section class="py-11">
+      @@include("partials/formulaire.html")
+    </section>
+
+    <!-- CURVE
+    ================================================== -->
+    <div class="position-relative mt-n16">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+      </div>
+    </div>
+
+    <!-- FOOTER
+    ================================================== -->
+    <section class="pt-16 bg-dark">
+      @@include("partials/footer.html", {
+        "classList": "bg-dark border-top border-gray-800-50"
+      })
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+      
+  </body>
+</html>

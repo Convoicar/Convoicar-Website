@@ -5,6 +5,10 @@
 
 // Brand image
 
+.bg-dark{
+  background-color: #211f2d !important;
+}
+
 .bg-dark .footer-brand {
   filter: brightness(0) invert(1);
 }

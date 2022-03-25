@@ -59,6 +59,10 @@
 
 // Colors
 
+.border-yellow-10 {
+  border-color: $primary !important;
+}
+
 .border-white-10 {
   border-color: fade-out($white, .9) !important;
 }

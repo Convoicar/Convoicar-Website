@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    @@include("partials/head.html", {
+      "pageTitle": "Convoicar : la livraison"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+    
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+      "classList": "navbar-light",
+      "container": "container-fluid"
+    })
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="position-relative pt-12 pt-md-14 mt-n11">
+
+      <!-- Shape -->
+      <div class="shape shape-fluid-x shape-blur-2 svg-shim text-light">
+        @@include("assets/img/shapes/blurs/blur-2.svg")
+      </div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row align-items-center text-center text-md-left">
+          <div class="col-12 col-md-6">
+            
+            <!-- Image -->
+            <img src="assets/img/courtoisie.png" alt="convoicar jockey livraison de véhicule" class="img-fluid mw-130 float-right mb-6 mb-md-0" data-aos="fade-right">
+
+          </div>
+          <div class="col-12 col-md-6">
+            
+            <!-- Heading -->
+            <h1 class="display-4">
+              GESTION DES VÉHICULES <br>
+              <span class="text-primary">DE COURTOISIE</span>
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted text-justify mb-0" data-aos="fade-left" data-aos-delay="200">
+              Notre plateforme digitale vous permet de gérer et maîtriser l’utilisation de vos véhicules de courtoisie.
+            </p>
+            <br/>
+            <p class="font-size-lg text-muted text-justify mb-0" data-aos="fade-left" data-aos-delay="200">
+              Un système de prise de rendez-vous en ligne de vos véhicules pour vos clients.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+        <!-- BENEFITS
+    ================================================== -->
+    <section class="py-8 py-md-11">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          
+          <div class="col-12 col-md-5 order-md-1">
+            
+            <!-- Badge -->
+            <span class="badge badge-pill badge-primary-soft mb-3">
+              <span class="h6 text-uppercase">Bénéfices</span>
+            </span>
+
+            <!-- Heading -->
+            <h2>
+              La courtoisie/le rent n’est plus un service dû au client et est  <br>
+              <span class="text-primary">intégré dans une prestation globale</span>
+            </h2>
+
+            <!-- Text -->
+            <!-- <p class="font-size-lg text-muted mb-6 mb-md-0">
+              We put our money where our mouthes are. Once you're part of our team, we're going to take the best possible care of you with tons of benefits and perks unavailable anywhere else.
+            </p> -->
+
+          </div>
+          <div class="col-12 col-md-6 order-md-2">
+            
+            <!-- Card -->
+            <div class="card card-border border-primary shadow-lg">
+              <div class="card-body">
+                
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  
+                  <div class="list-group-item-action d-flex align-items-center p-2">
+                    <div class="icon m-2 p-2 text-primary">
+                      @@include("./assets/img/icons/Key.svg")
+                    </div>
+                    <!-- Text -->                
+                    <div class="mr-auto">
+                      <!-- Heading -->
+                      <p class="font-weight-bold mb-0">
+                        Un véhicule en toutes circonstances
+                      </p>
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Lorsque la voiture devient indispensable, il y aura toujours une solution de mobilité adaptée.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-group-item-action d-flex align-items-center p-2">
+                    <div class="icon m-2 p-2 text-primary">
+                      @@include("./assets/img/icons/Folder-cloud.svg")
+                    </div>
+                    <!-- Text -->                
+                    <div class="mr-auto">
+                      <!-- Heading -->
+                      <p class="font-weight-bold mb-0">
+                        Un parcours digitalisé
+                      </p>
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Vos clients peuvent prendre rendez-vous sur la plateforme BRIKKS.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-group-item-action d-flex align-items-center p-2">
+                    <div class="icon m-2 p-2 text-primary">
+                      @@include("./assets/img/icons/Settings.svg")
+                    </div>
+                    <!-- Text -->                
+                    <div class="mr-auto">
+                      <!-- Heading -->
+                      <p class="font-weight-bold mb-0">
+                        Une gestion simple et efficace
+                      </p>
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Une plateforme unique pour une gestion diverse.
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    <!-- ================================================== --> 
+    <!-- BLOC GARANTIES
+================================================== -->
+<section class="py-8 py-md-11">
+  @@include("partials/garanties.html")
+</section>
+
+    <!-- REGISTRATION
+    ================================================== -->
+    <section class="py-11">
+      @@include("partials/formulaire.html")
+    </section>
+
+    <!-- CURVE
+    ================================================== -->
+    <div class="position-relative mt-n16">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+      </div>
+    </div>
+
+    <!-- FOOTER
+    ================================================== -->
+    <section class="pt-16 bg-dark">
+      @@include("partials/footer.html", {
+        "classList": "bg-dark border-top border-gray-800-50"
+      })
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+      
+  </body>
+</html>

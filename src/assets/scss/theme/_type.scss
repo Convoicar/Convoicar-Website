@@ -6,17 +6,17 @@
 // Font
 
 @font-face {
-  font-family: "HKGroteskPro";
+  font-family: "Lato";
   font-weight: 400;
-  src: url("#{$path-to-fonts}/HK%20Grotesk%20Pro/HKGroteskPro-Regular.woff2") format("woff2"),
-  url("#{$path-to-fonts}/HK%20Grotesk%20Pro/HKGroteskPro-Regular.woff") format("woff");
+  src: url("#{$path-to-fonts}/HK%20Grotesk%20Pro/Lato-Regular.tff") format("tff"),
+  url("#{$path-to-fonts}/HK%20Grotesk%20Pro/Lato-Regular.tff") format("tff");
 }
 
 @font-face {
-  font-family: "HKGroteskPro";
+  font-family: "Lato";
   font-weight: 600;
-  src: url("#{$path-to-fonts}/HK%20Grotesk%20Pro/HKGroteskPro-Medium.woff2") format("woff2"),
-  url("#{$path-to-fonts}/HK%20Grotesk%20Pro/HKGroteskPro-Medium.woff") format("woff");
+  src: url("#{$path-to-fonts}/HK%20Grotesk%20Pro/Lato-Medium.tff") format("tff"),
+  url("#{$path-to-fonts}/HK%20Grotesk%20Pro/Lato-Medium.ttf") format("tff");
 }
 
 

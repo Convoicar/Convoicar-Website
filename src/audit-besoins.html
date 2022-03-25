@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    @@include("partials/head.html", {
+      "pageTitle": "Convoicar : les Jockeys"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+    
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+      "classList": "navbar-light",
+      "container": "container-fluid"
+    })
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="position-relative pt-12 pt-md-14 mt-n11">
+
+      <!-- Shape -->
+      <div class="shape shape-fluid-x shape-blur-2 svg-shim text-light">
+        @@include("assets/img/shapes/blurs/blur-2.svg")
+      </div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row align-items-center text-center text-md-left">
+          <div class="col-12 col-md-6">
+            
+            <!-- Image -->
+            <img src="assets/img/jockey-convoicar.png" alt="jockey convoicar" class="img-fluid mw-130 float-right mb-6 mb-md-0" data-aos="fade-right">
+
+          </div>
+          <div class="col-12 col-md-6">
+            
+            <!-- Heading -->
+            <h1 class="display-4">
+              AUDIT DES BESOINS<br>
+              <span class="text-primary"> DE MOBILITÉ</span>
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted text-justify mb-0" data-aos="fade-left" data-aos-delay="200">
+              À travers une étude de marché de la mobilité dans votre zone de chalandise, nous identifions les services de mobilité répondant le mieux aux besoins de vos clients. Nous déterminons ainsi un volume et un périmètre d’actions.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+
+    <!-- TESTIMONIALS
+    ================================================== -->
+    <section class="pt-8 pt-md-11">
+      <div class="container-fluid">
+        <div class="row justify-content-center px-10">
+          <!-- <div class="col-12"> -->
+            
+            <!-- Flickity -->
+            <!-- <div class="flickity-viewport-visible pt-2 pb-9" data-flickity='{"cellAlign": "left", "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "contain": true}'>
+               -->
+              <div class="col-md-2 col-sm-12">
+
+                <!-- Card -->
+                <div class="card card-border shadow-light-lg lift lift-lg h-100" style="border-top-color: #fdc947 ;">
+
+                  <div class="card-body text-center">
+                    <!-- Icon -->
+                    <img src="assets/img/pictos/étoile.png" class="img-fluid" style="height: 100px" >
+
+                    <!-- Text -->
+                    <p class="text-gray-700 mb-5">
+                      Vos clients choisissent leur solution de mobilité (Mobilité douce, Courtoisie, Jockey)
+                    </p>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-2 col-sm-12">
+                
+                <!-- Card -->
+                <div class="card card-border shadow-light-lg lift lift-lg h-100" style="border-top-color: #fdc947;">
+                  <div class="card-body text-center">
+
+                    <!-- Icon -->
+                    <img src="assets/img/pictos/t-shirt.png" class="img-fluid" style="height: 100px" >
+
+                    <!-- Text -->
+                    <p class="text-gray-700 mb-5">
+                      Leur demande est répertoriée en fonction du besoin de vos clients
+                    </p>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-2 col-sm-12">
+                
+                <!-- Card -->
+                <div class="card card-border shadow-light-lg lift lift-lg  h-100" style="border-top-color: #fdc947;">
+                  <div class="card-body text-center">
+
+                    <!-- Icon -->
+                    <img src="assets/img/pictos/portable.png" class="img-fluid" style="height: 100px" >
+
+
+
+                    <!-- Text -->
+                    <p class="text-gray-700 mb-5">
+                      Un nouveau plan d’action
+                    </p>
+          
+                  </div>
+                </div>
+
+              </div>
+            <!-- </div> -->
+
+          <!-- </div> -->
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+
+
+
+    <!-- ================================================== --> 
+    <!-- BLOC GARANTIES
+================================================== -->
+<section class="py-8 py-md-11">
+  @@include("partials/garanties.html")
+</section>
+
+    <!-- REGISTRATION
+    ================================================== -->
+    <section class="py-11">
+      @@include("partials/formulaire.html")
+    </section>
+
+    <!-- CURVE
+    ================================================== -->
+    <div class="position-relative mt-n16">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+      </div>
+    </div>
+
+    <!-- FOOTER
+    ================================================== -->
+    <section class="pt-16 bg-dark">
+      @@include("partials/footer.html", {
+        "classList": "bg-dark border-top border-gray-800-50"
+      })
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+      
+  </body>
+</html>

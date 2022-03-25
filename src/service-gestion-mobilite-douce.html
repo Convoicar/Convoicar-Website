@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    @@include("partials/head.html", {
+      "pageTitle": "Convoicar : le service après-vente"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+    
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+      "classList": "navbar-light",
+      "container": "container-fluid"
+    })
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="position-relative pt-12 pt-md-14 mt-n11">
+
+      <!-- Shape -->
+      <div class="shape shape-fluid-x shape-blur-2 svg-shim text-light">
+        @@include("assets/img/shapes/blurs/blur-2.svg")
+      </div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row align-items-center text-center text-md-left">
+          
+          <div class="col-12 col-md-6">
+             <!-- Heading --> 
+            <h1 class="display-4">
+              Gestion de la<br>
+              <span class="text-primary"> Mobilité douce</span>
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted text-justify mb-0" data-aos="fade-left" data-aos-delay="200">
+              Vous souhaiter proposer de la mobilité douce à vos clients? Nous vous accompagnons dans la mise en place de cette solution sur tous les aspects opérationnels et digitaux. Vous équipez vos concessions ou ateliers en trottinettes, vélos ou scooters électriques et nous vous permettons de gérer vos équipements via la plateforme Brikks. Optez pour la mobilité de proximité adaptée aux concessions ou ateliers urbains et ruraux.
+            </p>
+
+          </div>
+          <div class="col-12 col-md-6">
+            
+            <!-- Image -->
+            <img src="assets/img/trottinette.png" alt="convoicar service de jockey après vente" class="img-fluid mb-6 mb-md-0" data-aos="fade-right">
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+            <!-- BENEFITS
+    ================================================== -->
+    <section class="py-8 py-md-11">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-md-5 order-md-2">
+            
+            <!-- Badge -->
+            <span class="badge badge-pill badge-primary-soft mb-3">
+              <span class="h6 text-uppercase">Bénéfices</span>
+            </span>
+
+            <!-- Heading -->
+            <h2>
+              Offrez un choix de mobilité large aux automobilistes 
+              <span class="text-primary">lorsqu’ils viennent en concession</span>
+            </h2>
+
+            <!-- Text -->
+
+          </div>
+          <div class="col-12 col-md-6 order-md-1">
+            
+            <!-- Card -->
+            <div class="card card-border border-primary shadow-lg">
+              <div class="card-body">
+                
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  
+                  <div class="list-group-item-action d-flex align-items-center p-2">
+                    <div class="icon m-2 p-2 text-primary">
+                      @@include("./assets/img/icons/Route.svg")
+                    </div>
+                    <!-- Text -->                
+                    <div class="mr-auto">
+                      <!-- Heading -->
+                      <p class="font-weight-bold mb-0">
+                        Des déplacements urbains facilités
+                      </p>
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Location de trotinette/vélo/scooter
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-group-item-action d-flex align-items-center p-2">
+                    <div class="icon m-2 p-2 text-primary">
+                      @@include("./assets/img/icons/Display.svg")
+                    </div>
+                    <!-- Text -->                
+                    <div class="mr-auto">
+                      <!-- Heading -->
+                      <p class="font-weight-bold mb-0">
+                        Une plateforme de gestion simple et rapide
+                      </p>
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Gérer vos véhicules de mobilité douce sur un seul et même outil
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-group-item-action d-flex align-items-center p-2">
+                    <div class="icon m-2 p-2 text-primary">
+                      @@include("./assets/img/icons/Bulb.svg")
+                    </div>
+                    <!-- Text -->                
+                    <div class="mr-auto">
+                      <!-- Heading -->
+                      <p class="font-weight-bold mb-0">
+                        Devenez la concession de demain
+                      </p>
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Soyez précurseur de ces nouveaux services de mobilité
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+    <!-- ================================================== --> 
+    <!-- BLOC GARANTIES
+================================================== -->
+<section class="py-8 py-md-11">
+  @@include("partials/garanties.html")
+</section>
+
+    <!-- REGISTRATION
+    ================================================== -->
+    <section class="py-11">
+      @@include("partials/formulaire.html")
+    </section>
+
+    <!-- CURVE
+    ================================================== -->
+    <div class="position-relative mt-n16">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+      </div>
+    </div>
+
+    <!-- FOOTER
+    ================================================== -->
+    <section class="pt-16 bg-dark">
+      @@include("partials/footer.html", {
+        "classList": "bg-dark border-top border-gray-800-50"
+      })
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+      
+  </body>
+</html>

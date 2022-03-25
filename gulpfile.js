@@ -95,11 +95,11 @@ gulp.task('browsersync', function(callback) {
       } else if (req.url === '/la-plateforme') {
         req.url = '/la-plateforme.html';
       } else if (req.url === '/convoicar-pour-les-entreprises') {
-        req.url = '/convoicar-pour-les-entreprises.html';
+        req.url = '/offre-jockey.html';
       } else if (req.url === '/service-de-livraison-de-vehicule') {
-        req.url = '/service-de-livraison-de-vehicule.html';
+        req.url = '/offre-jockey.html';
       } else if (req.url === '/service-de-jockey-apres-vente') {
-        req.url = '/service-de-jockey-apres-vente.html';
+        req.url = '/offre-jockey.html';
       } else if (req.url === '/qui-sommes-nous') {
         req.url = '/qui-sommes-nous.html';
       } else if (req.url === '/convoicar-pour-les-automobilistes') {
@@ -114,7 +114,25 @@ gulp.task('browsersync', function(callback) {
         req.url = '/contact.html';
       } else if (req.url === '/convoicar-pour-les-pros/main/') {
         req.url = '/service-de-jockey-apres-vente.html';
+      }   
+      else if (req.url === '/service-gestion-de-jockey') {
+        req.url = '/service-gestion-de-jockey.html';
       }     
+      else if (req.url === '/service-gestion-mobilite-douce') {
+        req.url = '/service-gestion-mobilite-douce.html';
+      }     
+      else if (req.url === '/service-gestion-vehicule-courtoisie') {
+        req.url = '/service-gestion-vehicule-courtoisie.html';
+      }  
+      else if (req.url === '/audit-besoins') {
+        req.url = '/audit-besoins.html';
+      }    
+      else if (req.url === '/offre-jockey') {
+        req.url = '/offre-jockey.html';
+      }  
+      else if (req.url === '/offre-genius') {
+        req.url = '/offre-genius.html';
+      }    
       return next();
     }
   });
