@@ -3,7 +3,7 @@
  * to ensure cascade of styles.
  */
 /*!
- * Bootstrap v4.6.1 (https://getbootstrap.com/)
+ * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -57,7 +57,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Lato", serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.0625rem;
   font-weight: 400;
   line-height: 1.6;
@@ -1465,6 +1465,9 @@ pre {
   .form-control::-ms-expand {
     background-color: transparent;
     border: 0; }
+  .form-control:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000000; }
   .form-control:focus {
     color: #000000;
     background-color: #FFFFFF;
@@ -1490,10 +1493,6 @@ input[type="month"].form-control {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none; }
-
-select.form-control:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #000000; }
 
 select.form-control:focus::-ms-value {
   color: #000000;
@@ -2752,21 +2751,16 @@ input[type="button"].btn-block {
     display: flex;
     align-items: center; }
     .input-group > .custom-file:not(:last-child) .custom-file-label,
-    .input-group > .custom-file:not(:last-child) .custom-file-label::after {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0; }
     .input-group > .custom-file:not(:first-child) .custom-file-label {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
   .input-group:not(.has-validation) > .form-control:not(:last-child),
   .input-group:not(.has-validation) > .custom-select:not(:last-child),
-  .input-group:not(.has-validation) > .custom-file:not(:last-child) .custom-file-label,
   .input-group:not(.has-validation) > .custom-file:not(:last-child) .custom-file-label::after {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
   .input-group.has-validation > .form-control:nth-last-child(n + 3),
   .input-group.has-validation > .custom-select:nth-last-child(n + 3),
-  .input-group.has-validation > .custom-file:nth-last-child(n + 3) .custom-file-label,
   .input-group.has-validation > .custom-file:nth-last-child(n + 3) .custom-file-label::after {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
@@ -3303,8 +3297,8 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.15rem;
-  padding-bottom: 0.15rem;
+  padding-top: -0.75rem;
+  padding-bottom: -0.75rem;
   margin-right: 0;
   font-size: 1.5rem;
   line-height: inherit;
@@ -4649,7 +4643,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Lato", serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -4734,7 +4728,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 380px;
-  font-family: "Lato", serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -4923,11 +4917,8 @@ a.close.disabled {
   align-items: center;
   justify-content: center;
   width: 15%;
-  padding: 0;
   color: #FFFFFF;
   text-align: center;
-  background: none;
-  border: 0;
   opacity: 0.5;
   transition: opacity 0.15s ease; }
   @media (prefers-reduced-motion: reduce) {
@@ -5017,7 +5008,7 @@ a.close.disabled {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  vertical-align: -0.125em;
+  vertical-align: text-bottom;
   border: 0.25em solid currentColor;
   border-right-color: transparent;
   border-radius: 50%;
@@ -5047,7 +5038,7 @@ a.close.disabled {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  vertical-align: -0.125em;
+  vertical-align: text-bottom;
   background-color: currentColor;
   border-radius: 50%;
   opacity: 0;
@@ -5902,7 +5893,6 @@ button.bg-white:focus {
   position: fixed !important; }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important; }
 
 .fixed-top {
@@ -5919,9 +5909,8 @@ button.bg-white:focus {
   left: 0;
   z-index: 1030; }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020; } }
@@ -10084,6 +10073,8 @@ a.text-white:hover, a.text-white:focus {
   blockquote {
     border: 1px solid #ABBCD5;
     page-break-inside: avoid; }
+  thead {
+    display: table-header-group; }
   tr,
   img {
     page-break-inside: avoid; }
@@ -10385,6 +10376,24 @@ a.text-white:hover, a.text-white:focus {
   .badge-secondary-soft.active:hover, .badge-secondary-soft.active:focus {
     background-color: #fdc22e;
     color: #1B2A4E; }
+
+#banner {
+  position: absolute;
+  top: 95px;
+  left: 0;
+  right: 0;
+  background: #F1F4F8;
+  padding: 1rem; }
+  #banner p {
+    font-size: 0.9375rem;
+    margin: 0 3rem; }
+  #banner button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: 0;
+    padding: 0; }
 
 .border-secondary {
   border-color: #fdc947 !important; }
@@ -11080,7 +11089,7 @@ a.card, a.card-body, a.card-footer, a.card-meta {
   font-weight: 600; }
 
 .navbar-brand-img {
-  max-height: 2.4rem;
+  max-height: 4.2rem;
   width: auto; }
 
 .navbar-dark .navbar-brand {
@@ -11318,14 +11327,28 @@ html, body {
   vertical-align: middle; }
 
 @font-face {
-  font-family: "Lato";
-  font-weight: 400;
-  src: url("../fonts/HK%20Grotesk%20Pro/Lato-Regular.tff") format("tff"), url("../fonts/HK%20Grotesk%20Pro/Lato-Regular.tff") format("tff"); }
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Light.eot");
+  src: url("../fonts/Lato/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Light.woff2") format("woff2"), url("../fonts/Lato/Lato-Light.woff") format("woff"), url("../fonts/Lato/Lato-Light.ttf") format("truetype"), url("../fonts/Lato/Lato-Light.svg#Lato-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
-  font-family: "Lato";
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Regular.eot");
+  src: url("../fonts/Lato/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato/Lato-Regular.woff") format("woff"), url("../fonts/Lato/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato/Lato-Regular.svg#Lato-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Medium.eot");
+  src: url("../fonts/Lato/Lato-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Medium.woff2") format("woff2"), url("../fonts/Lato/Lato-Medium.woff") format("woff"), url("../fonts/Lato/Lato-Medium.ttf") format("truetype"), url("../fonts/Lato/Lato-Medium.svg#Lato-Medium") format("svg");
   font-weight: 600;
-  src: url("../fonts/HK%20Grotesk%20Pro/Lato-Medium.tff") format("tff"), url("../fonts/HK%20Grotesk%20Pro/Lato-Medium.ttf") format("tff"); }
+  font-style: normal;
+  font-display: swap; }
 
 h1, h2,
 .h1, .h2 {
@@ -11859,7 +11882,6 @@ code {
   .position-sm-fixed {
     position: fixed !important; }
   .position-sm-sticky {
-    position: -webkit-sticky !important;
     position: sticky !important; } }
 
 @media (min-width: 768px) {
@@ -11872,7 +11894,6 @@ code {
   .position-md-fixed {
     position: fixed !important; }
   .position-md-sticky {
-    position: -webkit-sticky !important;
     position: sticky !important; } }
 
 @media (min-width: 992px) {
@@ -11885,7 +11906,6 @@ code {
   .position-lg-fixed {
     position: fixed !important; }
   .position-lg-sticky {
-    position: -webkit-sticky !important;
     position: sticky !important; } }
 
 @media (min-width: 1200px) {
@@ -11898,7 +11918,6 @@ code {
   .position-xl-fixed {
     position: fixed !important; }
   .position-xl-sticky {
-    position: -webkit-sticky !important;
     position: sticky !important; } }
 
 .shadow-light {
@@ -12399,6 +12418,9 @@ code {
 @media (min-width: 1200px) {
   .w-cover {
     width: calc(100% + (100vw - 1040px) / 2 + 40px); } }
+
+.font-size-xs {
+  font-size: 0.75rem !important; }
 
 .font-size-sm {
   font-size: 0.9375rem !important; }
@@ -12923,7 +12945,7 @@ body.compensate-for-scrollbar {
     color: #fdc947; }
 
 .ql-container {
-  font-family: "Lato", serif; }
+  font-family: "Lato", sans-serif; }
 
 .ql-toolbar {
   position: relative;

@@ -7,6 +7,9 @@
     })
   </head>
   <body class="bg-light">
+    <!-- BANNER
+    ================================================== -->
+    @@include("partials/banner.html")
 
     <!-- MODALS
     ================================================== -->
@@ -23,7 +26,7 @@
     ================================================== -->
     <section class="position-relative py-8 py-md-11 mb-9">
       
-      <!-- Contetn -->
+      <!-- Content -->
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-6 order-md-2">
@@ -38,18 +41,18 @@
             
             <!-- Heading -->
             <h1 class="display-3">
-              Le N°1 des services jockey<br>
-              <span class="text-primary" data-toggle="typed" data-options="{&quot;strings&quot;: [&quot;pour la livraison&quot;, &quot;pour l'après-vente&quot;, &quot;pour l'auto-partage&quot;]}"></span>
+              Le N°1 des services de mobilité<br>
+              <span class="text-primary" data-toggle="typed" data-options="{&quot;strings&quot;: [&quot;pour votre concession&quot;, &quot;pour votre atelier&quot;, &quot;pour votre flotte&quot;]}"></span>
             </h1>
 
             <!-- Text -->
             <p class="lead text-muted mb-6 mb-md-8">
-              Pour tous les professionnels de l'auto souhaitant offrir des services premiums
+              Gérer vos mobilités depuis une seule plateforme
             </p>
 
             <!-- Buttons -->
             <a href="@@webRoot/contact" class="btn btn-primary mr-1 lift">
-              Demandez une démo <i class="fe fe-arrow-right ml-3"></i>
+              Demander une démo <i class="fe fe-arrow-right ml-3"></i>
             </a>
 
           </div>
@@ -141,6 +144,11 @@
             <div class="col-4 col-md-3 col-lg-2 p-0 text-center">
               <!-- Brand -->
               <div id = "img-band14" class="img-fluid svg-shim text-white">
+              </div>
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 p-0 text-center">
+              <!-- Brand -->
+              <div id = "img-band15" class="img-fluid svg-shim text-white">
               </div>
             </div>
           </div>
@@ -282,6 +290,83 @@
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
+    </section>
+
+    <!-- TESTIMONIALS
+    ================================================== -->
+    <section class="pt-5 pt-md-7 mt-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Heading -->
+            <h2 class="font-weight-bold text-center">
+              Nous comptons plus de <span class="text-primary">650 clients</span> à travers toute la France
+            </h2>
+            <!-- Text -->
+            <p class="font-size-lg text-muted text-center mb-5">
+              Et ils nous font confiance...
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+              <div class="card-body">
+                <div class="text-center font-size-lg text-primary mb-4">
+                  <i class="fe fe-star"></i><i class="fe fe-star"></i><i class="fe fe-star"></i><i class="fe fe-star"></i><i class="fe fe-star"></i>
+                </div>
+                <p class="mb-3 text-muted">
+                  J’ai connu le service proposé par BRIKKS (ex Convoicar) au sein de
+                  ma concession.<br />
+                  Ils font preuves d’une très bonne réactivé et nous apportent toujours
+                  une solution pour nos clients.<br />
+                  Je suis très satisfaite de mon expérience avec BRIKKS et avoir un contact privilégié est un énorme plus.
+                </p>
+                <p>
+                  <em class="font-weight-bold">Aurélie C.</em><br />
+                  <em class="font-weight-bold">Horizon BMW</em>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+              <div class="card-body">
+                <div class="text-center font-size-lg text-primary mb-4">
+                  <i class="fe fe-star"></i><i class="fe fe-star"></i><i class="fe fe-star"></i><i class="fe fe-star"></i><i class="fe fe-star"></i>
+                </div>
+                <p class="mb-3 text-muted">
+                  J’ai découvert le service BRIKKS (ex Convoicar) par internet. Grâce à eux, les sorties de véhicules sont fluidifiées et la prestation est de qualité.<br />
+                  Le retour des véhicules est rapide et la prestation premium est un réel plus pour nos clients.<br />
+                  Je recommanderai BRIKKS pour leur efficacité et leur bonne communication.
+                </p>
+                <p>
+                  <em class="font-weight-bold">Anthony L.</em><br />
+                  <em class="font-weight-bold">Neubauer Mirabeau</em>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+              <div class="card-body">
+                <div class="text-center font-size-lg text-primary mb-4">
+                  <i class="fe fe-star"></i><i class="fe fe-star"></i><i class="fe fe-star"></i><i class="fe fe-star"></i><i class="fe fe-star"></i>
+                </div>
+                <p class="mb-3 text-muted">
+                  BRIKKS (ex Convoicar) m’a été recommandé par une connaissance.<br />
+                  Nous avions un besoin important en conciergerie pour fluidifier les entrées et sorties des véhicules.<br />
+                  BRIKKS nous a donc semblé être la solution idéale ! Je recommande BRIKKS pour leur disponibilité et efficacité !
+                </p>
+                <p>
+                  <em class="font-weight-bold">Isabelle G.</em><br />
+                  <em class="font-weight-bold">TOP GARAGE 3GTG MALAKOFF</em>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- REGISTRATION

@@ -1,0 +1,27 @@
+//
+// banner.scss
+// Extended from Bootstrap
+//
+
+#banner {
+  position: absolute;
+  top: 95px;
+  left: 0;
+  right: 0;
+  background: $gray-200;
+  padding: 1rem;
+
+  p {
+    font-size: $font-size-sm;
+    margin: 0 3rem;
+  }
+  button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: 0;
+    padding: 0;
+  }
+}
+

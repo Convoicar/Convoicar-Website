@@ -153,13 +153,14 @@ $box-shadow-lift-lg: 0 2rem 5rem fade-out($black, .9), 0 .5rem 1rem -.75rem fade
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-base: 'Lato', serif !default;
+$font-family-base: 'Lato', sans-serif !default;
 
 $font-size-base: 1.0625rem !default;
 $font-size-lg: 1.1875rem !default;
 $font-size-sm: 0.9375rem !default;
 $font-size-xs: 0.75rem !default; // NEW
 
+$font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-bold: 600 !default;
 
@@ -531,6 +532,8 @@ $custom-select-indicator-padding-xs: 1.25rem !default;
 // Navbar
 
 $navbar-brand-font-weight: $font-weight-bold !default;
+
+$navbar-brand-height: 4.2rem !default;
 
 $navbar-nav-link-font-weight: $font-weight-bold !default;
 

@@ -6,19 +6,41 @@
 // Font
 
 @font-face {
-  font-family: "Lato";
-  font-weight: 400;
-  src: url("#{$path-to-fonts}/HK%20Grotesk%20Pro/Lato-Regular.tff") format("tff"),
-  url("#{$path-to-fonts}/HK%20Grotesk%20Pro/Lato-Regular.tff") format("tff");
+  font-family: 'Lato';
+  src: url('#{$path-to-fonts}/Lato/Lato-Light.eot');
+  src: url('#{$path-to-fonts}/Lato/Lato-Light.eot?#iefix') format('embedded-opentype'),
+      url('#{$path-to-fonts}/Lato/Lato-Light.woff2') format('woff2'),
+      url('#{$path-to-fonts}/Lato/Lato-Light.woff') format('woff'),
+      url('#{$path-to-fonts}/Lato/Lato-Light.ttf') format('truetype'),
+      url('#{$path-to-fonts}/Lato/Lato-Light.svg#Lato-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
-
 @font-face {
-  font-family: "Lato";
-  font-weight: 600;
-  src: url("#{$path-to-fonts}/HK%20Grotesk%20Pro/Lato-Medium.tff") format("tff"),
-  url("#{$path-to-fonts}/HK%20Grotesk%20Pro/Lato-Medium.ttf") format("tff");
+  font-family: 'Lato';
+  src: url('#{$path-to-fonts}/Lato/Lato-Regular.eot');
+  src: url('#{$path-to-fonts}/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+      url('#{$path-to-fonts}/Lato/Lato-Regular.woff2') format('woff2'),
+      url('#{$path-to-fonts}/Lato/Lato-Regular.woff') format('woff'),
+      url('#{$path-to-fonts}/Lato/Lato-Regular.ttf') format('truetype'),
+      url('#{$path-to-fonts}/Lato/Lato-Regular.svg#Lato-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
-
+@font-face {
+  font-family: 'Lato';
+  src: url('#{$path-to-fonts}/Lato/Lato-Medium.eot');
+  src: url('#{$path-to-fonts}/Lato/Lato-Medium.eot?#iefix') format('embedded-opentype'),
+      url('#{$path-to-fonts}/Lato/Lato-Medium.woff2') format('woff2'),
+      url('#{$path-to-fonts}/Lato/Lato-Medium.woff') format('woff'),
+      url('#{$path-to-fonts}/Lato/Lato-Medium.ttf') format('truetype'),
+      url('#{$path-to-fonts}/Lato/Lato-Medium.svg#Lato-Medium') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
 // Headings
 
