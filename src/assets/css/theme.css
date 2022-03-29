@@ -3297,8 +3297,8 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: -0.75rem;
-  padding-bottom: -0.75rem;
+  padding-top: -0.05rem;
+  padding-bottom: -0.05rem;
   margin-right: 0;
   font-size: 1.5rem;
   line-height: inherit;
@@ -11089,7 +11089,7 @@ a.card, a.card-body, a.card-footer, a.card-meta {
   font-weight: 600; }
 
 .navbar-brand-img {
-  max-height: 4.2rem;
+  height: 2.8rem;
   width: auto; }
 
 .navbar-dark .navbar-brand {
@@ -12889,6 +12889,9 @@ body.compensate-for-scrollbar {
 
 .bg-dark .footer-brand {
   filter: brightness(0) invert(1); }
+
+.footer-brand {
+  height: 3rem; }
 
 .hljs {
   background-color: transparent; }
