@@ -17,3 +17,7 @@
   height: 3rem;
 }
 
+ul > li > a {
+  display: block;
+  font-size: $font-size-xs;
+}

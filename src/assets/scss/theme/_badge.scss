@@ -19,6 +19,20 @@
 
 // Color options
 
+.badge-primary-soft {
+  background-color: rgba(253,201,71,.7);
+  color: $white;
+
+  &.badge-pill {
+    padding: .1rem 3rem;
+  }
+}
+a.badge-primary-soft:hover,
+a.badge-primary-soft:focus {
+  background-color: rgba(253,201,71,.6);
+  color: $white;
+}
+
 .badge-gray-600 {
   background-color: $gray-600;
   color: $white;

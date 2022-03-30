@@ -19,6 +19,19 @@
 }
 @font-face {
   font-family: 'Lato';
+  src: url('#{$path-to-fonts}/Lato/Lato-LightItalic.eot');
+  src: url('#{$path-to-fonts}/Lato/Lato-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('#{$path-to-fonts}/Lato/Lato-LightItalic.woff2') format('woff2'),
+      url('#{$path-to-fonts}/Lato/Lato-LightItalic.woff') format('woff'),
+      url('#{$path-to-fonts}/Lato/Lato-LightItalic.ttf') format('truetype'),
+      url('#{$path-to-fonts}/Lato/Lato-LightItalic.svg#Lato-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
   src: url('#{$path-to-fonts}/Lato/Lato-Regular.eot');
   src: url('#{$path-to-fonts}/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
       url('#{$path-to-fonts}/Lato/Lato-Regular.woff2') format('woff2'),
@@ -31,14 +44,39 @@
 }
 @font-face {
   font-family: 'Lato';
-  src: url('#{$path-to-fonts}/Lato/Lato-Medium.eot');
-  src: url('#{$path-to-fonts}/Lato/Lato-Medium.eot?#iefix') format('embedded-opentype'),
-      url('#{$path-to-fonts}/Lato/Lato-Medium.woff2') format('woff2'),
-      url('#{$path-to-fonts}/Lato/Lato-Medium.woff') format('woff'),
-      url('#{$path-to-fonts}/Lato/Lato-Medium.ttf') format('truetype'),
-      url('#{$path-to-fonts}/Lato/Lato-Medium.svg#Lato-Medium') format('svg');
+  src: url('#{$path-to-fonts}/Lato/Lato-Italic.eot');
+  src: url('#{$path-to-fonts}/Lato/Lato-Italic.eot?#iefix') format('embedded-opentype'),
+      url('#{$path-to-fonts}/Lato/Lato-Italic.woff2') format('woff2'),
+      url('#{$path-to-fonts}/Lato/Lato-Italic.woff') format('woff'),
+      url('#{$path-to-fonts}/Lato/Lato-Italic.ttf') format('truetype'),
+      url('#{$path-to-fonts}/Lato/Lato-Italic.svg#Lato-Italic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('#{$path-to-fonts}/Lato/Lato-Bold.eot');
+  src: url('#{$path-to-fonts}/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+      url('#{$path-to-fonts}/Lato/Lato-Bold.woff2') format('woff2'),
+      url('#{$path-to-fonts}/Lato/Lato-Bold.woff') format('woff'),
+      url('#{$path-to-fonts}/Lato/Lato-Bold.ttf') format('truetype'),
+      url('#{$path-to-fonts}/Lato/Lato-Bold.svg#Lato-Bold') format('svg');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('#{$path-to-fonts}/Lato/Lato-BoldItalic.eot');
+  src: url('#{$path-to-fonts}/Lato/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('#{$path-to-fonts}/Lato/Lato-BoldItalic.woff2') format('woff2'),
+      url('#{$path-to-fonts}/Lato/Lato-BoldItalic.woff') format('woff'),
+      url('#{$path-to-fonts}/Lato/Lato-BoldItalic.ttf') format('truetype'),
+      url('#{$path-to-fonts}/Lato/Lato-BoldItalic.svg#Lato-BoldItalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -131,6 +169,7 @@ h6, .h6 {
 
 .display-4 {
   line-height: $display4-line-height;
+  font-weight: $font-weight-bold;
 
   @include media-breakpoint-down(md) {
     font-size: $display4-size-md;
