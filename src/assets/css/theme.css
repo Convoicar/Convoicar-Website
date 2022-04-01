@@ -10432,6 +10432,9 @@ a.badge-primary-desat-soft:hover, a.badge-primary-desat-soft:focus {
 .border-secondary {
   border-color: #fdc947 !important; }
 
+.border-success {
+  border-color: #869AB8 !important; }
+
 .breadcrumb-item {
   font-size: 0.9375rem; }
   .breadcrumb-item + .breadcrumb-item::before {
@@ -11489,7 +11492,7 @@ h6, .h6 {
   display: none; }
 
 .list-social-icon {
-  width: 1.25rem;
+  width: 35px;
   height: auto; }
 
 .hr-sm {
@@ -11507,7 +11510,8 @@ code {
   background: no-repeat center center / cover; }
 
 .bg-contact {
-  position: relative; }
+  position: relative;
+  background-size: 80%; }
   .bg-contact:before {
     content: '';
     display: block;
@@ -12957,6 +12961,9 @@ body.compensate-for-scrollbar {
 
 .bg-dark {
   background-color: #211f2d !important; }
+
+.border-top {
+  border-top-width: 3px !important; }
 
 .bg-dark .footer-brand {
   filter: brightness(0) invert(1); }
