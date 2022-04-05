@@ -13498,3 +13498,6 @@ ul > li > a {
 .flickity-slider {
   display: flex;
   align-items: center; }
+
+.text-dark {
+  color: #211f2d !important; }
