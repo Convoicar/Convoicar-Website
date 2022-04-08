@@ -78,7 +78,15 @@
 // Navigation
 
 .navbar-nav .nav-link {
+  color: #000 !important;
+  font-size: 1rem;
+  font-weight: 400 !important;
   font-weight: $navbar-nav-link-font-weight;
+
+  i {
+    position: relative;
+    top: 2px;
+  }
 
   @include hover-focus {
     outline: none;
@@ -226,7 +234,9 @@
     padding-right: 0;
   }
 }
-
+.navbar-nav .dropdown-link {
+  white-space: nowrap;
+}
 
 // Dropdown toggle
 
