@@ -158,7 +158,7 @@
     var facemask = cl
         .imageTag("convoicar_website/facemask2", {
             effect: "colorize",
-            color: "#7BEACA",
+            color: "#211F2D",
             height: 50,
             quality: 100,
             crop: "scale",
@@ -168,7 +168,7 @@
     var customerreview = cl
         .imageTag("convoicar_website/5-stars", {
             effect: "colorize",
-            color: "#7BEACA",
+            color: "#211F2D",
             height: 50,
             quality: 100,
             format: "png",
@@ -177,7 +177,7 @@
     var bouclier = cl
         .imageTag("convoicar_website/Assurance-icon", {
             effect: "colorize",
-            color: "#7BEACA",
+            color: "#211F2D",
             height: 50,
             quality: 100,
             crop: "scale",
