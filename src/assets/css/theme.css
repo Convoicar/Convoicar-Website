@@ -11699,6 +11699,26 @@ code {
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden; }
 
+.img-alternative {
+  width: 100%;
+  height: 400px;
+  background: no-repeat center center;
+  background-size: contain;
+  -webkit-animation: bgChange infinite 8s;
+          animation: bgChange infinite 8s; }
+
+@-webkit-keyframes bgChange {
+  0%, 20% {
+    background-image: url("../img/anim-home-brikks.png"); }
+  50%, 100% {
+    background-image: url("../img/anim-home-brikks2.png"); } }
+
+@keyframes bgChange {
+  0%, 20% {
+    background-image: url("../img/anim-home-brikks.png"); }
+  50%, 100% {
+    background-image: url("../img/anim-home-brikks2.png"); } }
+
 .overlay {
   position: relative; }
   .overlay::before {
