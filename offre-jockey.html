@@ -1,0 +1,1013 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Primary Meta Tags -->
+    <title>Brikks : Un service de jockey externalisé</title>
+    <meta name="title" content="Brikks Services de Jockeys">
+    <meta name="description" content="Brikks propose des services de jockeys pour l’entretien automobile, pour la livraison de véhicule neuf ou d’occasion mais également pour les flottes de véhicule en auto-partage ou en parc">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://convoicar.fr/">
+    <meta property="og:title" content="Brikks Services de Jockeys">
+    <meta property="og:description" content="Brikks propose des services de jockeys pour l’entretien automobile, pour la livraison de véhicule neuf ou d’occasion mais également pour les flottes de véhicule en auto-partage ou en parc">
+    <meta property="og:image" content="https://convoicar.fr/assets/img/convoicar-services-de-jockey.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://convoicar.fr/">
+    <meta property="twitter:title" content="Brikks Services de Jockeys">
+    <meta property="twitter:description" content="Brikks propose des services de jockeys pour l’entretien automobile, pour la livraison de véhicule neuf ou d’occasion mais également pour les flottes de véhicule en auto-partage ou en parc">
+    <meta property="twitter:image" content="https://convoicar.fr/assets/img/convoicar-services-de-jockey.png">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="./assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <!-- Map -->
+    <!-- <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' /> -->
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+
+
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    
+    
+    <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid d-flex justify-content-around">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href=".">
+          <img src="./assets/img/brikks.svg" class="navbar-brand-img" alt="Brikks Services de Jockey">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarLandings" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Nos services <i class="fas fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarAccount dropdownMenuLink">
+                <li>
+                  <a class="dropdown-link" href="./service-gestion-mobilite-douce" >
+                    <img height=25 src="./assets/img/trottinette.png"/> Gestion de la mobilité douce
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-link" href="./service-gestion-vehicule-courtoisie">
+                    <img height=25 src="./assets/img/courtoisie.png"/> Gestion des véhicules de courtoisie
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-link" href="./service-gestion-de-jockey">
+                    <img height=25 src="./assets/img/jockey-2.png"/> Gestion des services de jockey
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Notre offre <i class="fas fa-angle-down"></i>
+              </a>
+          
+              <ul class="dropdown-menu" aria-labelledby="navbarAccount  dropdownMenuLink">
+                <li>
+                  <a class="dropdown-link" href="./la-plateforme">
+                    <img height=25 src="./assets/img/icons/portable.png"/> Plateforme de gestion
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-link" href="./audit-besoins">
+                    <img height=18 src="./assets/img/icons/audit.svg"/> Audit des besoins de mobilités
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-link" href="./offre-jockey">
+                    <img height=25 src="./assets/img/icons/t-shirt.png"/> Services de jockey externalisés
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-link" href="./offre-genius">
+                    <img height=25 src="./assets/img/icons/genuis 2.svg"/> Genius
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="./devenir-jockey" aria-haspopup="true" aria-expanded="false">
+                Devenir Jockey
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./qui-sommes-nous" aria-haspopup="true" aria-expanded="false">
+                À propos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+            </li>
+          </ul>
+
+          <!-- Button -->
+          <ul class="navbar-nav ml-auto">
+            <a class="navbar-btn btn btn-sm btn-primary-soft lift m-1" href="https://client.convoicar.fr/" target="_blank">
+              Se connecter
+            </a>
+            <a class="navbar-btn btn btn-sm btn-primary lift m-1" href="./contact" target="_blank">
+              Demandez une démo
+            </a>
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+
+
+    <section class="pt-12 pt-md-14 mt-n11">
+      <div class="shape shape-fluid-x shape-blur-2 svg-shim text-light">
+        <svg viewBox="0 0 1313 768" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M442.794 768c163.088 0 305.568-88.227 382.317-219.556l.183.556s.249-.749.762-2.181a440.362 440.362 0 0033.192-71.389C901.996 397.81 989.306 277.09 1144.29 206l-.92-.693C1230.34 171.296 1295.63 94.049 1312.83 0H1.294v295.514c-.663 9.909-1 19.908-1 29.986 0 244.386 198.114 442.5 442.5 442.5z" fill="currentColor"/></svg>
+      </div>
+      <div class="container">
+        <div class="row align-items-center text-center text-md-left">
+          <div class="col-12 col-md-6">
+            <img src="assets/img/jockey-convoicar.png" alt="brikks auto partage" class="img-fluid mw-130 float-right mb-6 mb-md-0" data-aos="fade-right">
+          </div>
+          <div class="col-12 col-md-6">
+            <h1 class="display-4 text-uppercase">
+              Un service de jockey externalisé pour votre <span class="text-primary"> concession ou votre atelier</span>
+            </h1>
+            <p class="font-size-lg text-muted mb-0 text-justify" data-aos="fade-left" data-aos-delay="200">
+              Brikks vous permet d'externaliser votre service de jockey pour les services de livraison de véhicules VN/VO ou encore d'atelier. Faites appel aux jockeys Convoicar, sélectionnés pour leur sens du service client et identifiables.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-12 pt-md-14 mt-n11">
+      <div class="container">
+        <div class="row align-items-center text-center text-md-left">
+          <div class="col-12 col-md-6">
+            <h1 class="display-4 text-uppercase">
+				      Service de jockey pour <span class="text-primary">l'après-vente</span>
+            </h1>
+
+            <p class="font-size-lg text-muted text-justify mb-0" data-aos="fade-left" data-aos-delay="200">
+              Depuis 2016, Brikks a créé et développé son service
+              Jockey sous le nom de Convoicar, en collaboration avec des concessionnaires et
+              constructeurs premiums et généralistes. Le service
+              se distingue du convoyage traditionnel de par la
+              relation client qui le caractérise.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="assets/img/convoicar-service-de-jockey-apres-vente.png" alt="brikks service de jockey après vente" class="img-fluid mb-6 mb-md-0" data-aos="fade-right">
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="py-8 py-md-11">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-md-5 order-md-2">
+            <span class="badge badge-pill badge-primary-soft mb-5">
+              <span class="h6">Bénéfices</span>
+            </span>
+            <h2>
+              Nos jockeys Convoicar permettent aux
+              automobilistes d'éviter de perdre 
+              <span class="text-primary">4h pour une opération</span>
+            </h2>
+          </div>
+          <div class="col-12 col-md-6 order-md-1">
+            <div class="card card-border border-primary shadow-lg">
+              <div class="card-body">
+                <div class="list-group list-group-flush">
+                  
+                  <div class="list-group-item-action d-flex align-items-center p-2">
+                    <div class="icon m-2 p-2 text-primary">
+                      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                      <svg
+                         xmlns:dc="http://purl.org/dc/elements/1.1/"
+                         xmlns:cc="http://creativecommons.org/ns#"
+                         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                         xmlns:svg="http://www.w3.org/2000/svg"
+                         xmlns="http://www.w3.org/2000/svg"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         version="1.1"
+                         id="svg845">
+                        <metadata
+                           id="metadata851">
+                          <rdf:RDF>
+                            <cc:Work
+                               rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type
+                                 rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                              <dc:title></dc:title>
+                            </cc:Work>
+                          </rdf:RDF>
+                        </metadata>
+                        <defs
+                           id="defs849" />
+                        <g
+                           fill="none"
+                           fill-rule="evenodd"
+                           id="g843">
+                          <path
+                             d="M0 0h24v24H0z"
+                             id="path833" />
+                          <rect
+                             fill="#335eea"
+                             opacity="0.3"
+                             transform="rotate(-90,13,6)"
+                             x="12"
+                             width="2"
+                             height="12"
+                             rx="1"
+                             id="rect835"
+                             y="0"
+                             style="fill:#fdc947;fill-opacity:1" />
+                          <path
+                             d="M9.707 8.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 1.414L7.414 6l2.293 2.293z"
+                             fill="#335EEA"
+                             id="path837"
+                             style="fill:#fdc947;fill-opacity:1" />
+                          <rect
+                             fill="#335EEA"
+                             opacity=".3"
+                             transform="matrix(0 -1 -1 0 29 29)"
+                             x="10"
+                             y="12"
+                             width="2"
+                             height="12"
+                             rx="1"
+                             id="rect839"
+                             style="fill:#fdc947;fill-opacity:1" />
+                          <path
+                             d="M14.293 20.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 00-1.414 1.414L16.586 18l-2.293 2.293z"
+                             fill="#335EEA"
+                             id="path841"
+                             style="fill:#fdc947;fill-opacity:1" />
+                        </g>
+                      </svg>
+
+                    </div>             
+                    <div class="mr-auto">
+                      <p class="font-weight-bold mb-0">
+                        Optimisez votre flux d'entrée/sortie de véhicules
+                      </p>
+                      <p class="font-size-sm text-muted mb-0">
+                        Réservez un jockey en moins d'une minute
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-group-item-action d-flex align-items-center p-2">
+                    <div class="icon m-2 p-2 text-primary">
+                      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                      <svg
+                         xmlns:dc="http://purl.org/dc/elements/1.1/"
+                         xmlns:cc="http://creativecommons.org/ns#"
+                         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                         xmlns:svg="http://www.w3.org/2000/svg"
+                         xmlns="http://www.w3.org/2000/svg"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         version="1.1"
+                         id="svg841">
+                        <metadata
+                           id="metadata847">
+                          <rdf:RDF>
+                            <cc:Work
+                               rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type
+                                 rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                              <dc:title></dc:title>
+                            </cc:Work>
+                          </rdf:RDF>
+                        </metadata>
+                        <defs
+                           id="defs845" />
+                        <g
+                           fill="none"
+                           fill-rule="evenodd"
+                           id="g839">
+                          <path
+                             d="M0 0h24v24H0z"
+                             id="path833" />
+                          <path
+                             d="M9 10v9l1.153.384a12 12 0 003.794.616h3.594a3 3 0 002.941-2.412l.75-3.746a3 3 0 00-3.142-3.581l-3.59.239.364-4.006A1.37 1.37 0 0013.5 5a2.65 2.65 0 00-2.272 1.286L9 10z"
+                             fill="#335EEA"
+                             id="path835"
+                             style="fill:#fdc947;fill-opacity:1" />
+                          <rect
+                             fill="#335eea"
+                             opacity="0.3"
+                             x="2"
+                             y="9"
+                             width="5"
+                             height="11"
+                             rx="1"
+                             id="rect837"
+                             style="fill:#fdc947;fill-opacity:1" />
+                        </g>
+                      </svg>
+
+                    </div>               
+                    <div class="mr-auto">
+                      <p class="font-weight-bold mb-0">
+                        Fidélisez vos clients
+                      </p>
+                      <p class="font-size-sm text-muted mb-0">
+                        Réservez un jockey en moins d'une minute
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row align-items-center text-center text-md-left">
+          <div class="col-12 col-md-6">
+            <img src="assets/img/convoicar-jockey-livraison-de-vehicule.png" alt="brikks jockey livraison de véhicule" class="img-fluid mw-130 float-right mb-6 mb-md-0" data-aos="fade-right">
+          </div>
+          <div class="col-12 col-md-6">
+            <h1 class="display-4 text-uppercase">
+				      Service de jockey pour la <span class="text-primary">livraison de véhicules</span>
+            </h1>
+
+            <p class="font-size-lg text-muted text-justify mb-0" data-aos="fade-left" data-aos-delay="200">
+              Brikks propose son service Jockey Convoicar pour la livraison
+              de VN/VO avec mise en mains. L’univers digital
+              développé permet d’assurer une mise en main de
+              qualité et une gestion administrative optimisée.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-8 py-md-11">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-md-5 order-md-1">
+            <span class="badge badge-pill badge-primary-soft mb-5">
+              <span class="h6">Bénéfices</span>
+            </span>
+            <h2>
+				      Faites progresser votre
+              expérience client avec
+              <br>
+              <span class="text-primary">notre service de livraison de véhicule</span>
+            </h2>
+          </div>
+          <div class="col-12 col-md-6 order-md-2">
+            <div class="card card-border border-primary shadow-lg">
+              <div class="card-body">
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item-action d-flex align-items-center p-2">
+                    <div class="icon m-2 p-2 text-primary">
+                      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                      <svg
+                         xmlns:dc="http://purl.org/dc/elements/1.1/"
+                         xmlns:cc="http://creativecommons.org/ns#"
+                         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                         xmlns:svg="http://www.w3.org/2000/svg"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                         xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         version="1.1"
+                         id="svg841"
+                         sodipodi:docname="Group.svg"
+                         inkscape:export-filename="/Users/maelleconvoicar/Desktop/group.png"
+                         inkscape:export-xdpi="96"
+                         inkscape:export-ydpi="96"
+                         inkscape:version="1.0.1 (c497b03c, 2020-09-10)">
+                        <sodipodi:namedview
+                           pagecolor="#ffffff"
+                           bordercolor="#666666"
+                           borderopacity="1"
+                           objecttolerance="10"
+                           gridtolerance="10"
+                           guidetolerance="10"
+                           inkscape:pageopacity="0"
+                           inkscape:pageshadow="2"
+                           inkscape:window-width="804"
+                           inkscape:window-height="486"
+                           id="namedview840"
+                           showgrid="false"
+                           inkscape:zoom="22.5"
+                           inkscape:cx="12"
+                           inkscape:cy="12"
+                           inkscape:window-x="0"
+                           inkscape:window-y="25"
+                           inkscape:window-maximized="0"
+                           inkscape:current-layer="svg841" />
+                        <metadata
+                           id="metadata847">
+                          <rdf:RDF>
+                            <cc:Work
+                               rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type
+                                 rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                              <dc:title />
+                            </cc:Work>
+                          </rdf:RDF>
+                        </metadata>
+                        <defs
+                           id="defs845" />
+                        <g
+                           fill="none"
+                           fill-rule="evenodd"
+                           id="g839">
+                          <path
+                             d="M0 0h24v24H0z"
+                             id="path833" />
+                          <path
+                             d="M18 14a3 3 0 110-6 3 3 0 010 6zm-9-3a4 4 0 110-8 4 4 0 010 8z"
+                             fill="#335EEA"
+                             opacity=".3"
+                             id="path835"
+                             style="fill:#fdc947;fill-opacity:1" />
+                          <path
+                             d="M17.601 15c3.407.038 6.188 1.76 6.397 5.4.009.147 0 .6-.542.6H19.6c0-2.25-.744-4.328-1.999-6zm-17.6 5.2C.388 15.426 4.26 13 8.983 13c4.788 0 8.722 2.293 9.015 7.2.012.195 0 .8-.751.8H.727c-.25 0-.747-.54-.726-.8z"
+                             fill="#335EEA"
+                             id="path837"
+                             style="fill:#fdc947;fill-opacity:1" />
+                        </g>
+                      </svg>
+
+                    </div>           
+                    <div class="mr-auto">
+                      <p class="font-weight-bold mb-0">
+                        Mise en mains digitale
+                      </p>
+                      <p class="font-size-sm text-muted mb-0">
+                        Réservez un jockey en moins d'une minute
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-group-item-action d-flex align-items-center p-2">
+                    <div class="icon m-2 p-2 text-primary">
+                      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                      <svg
+                         xmlns:dc="http://purl.org/dc/elements/1.1/"
+                         xmlns:cc="http://creativecommons.org/ns#"
+                         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                         xmlns:svg="http://www.w3.org/2000/svg"
+                         xmlns="http://www.w3.org/2000/svg"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         version="1.1"
+                         id="svg857">
+                        <metadata
+                           id="metadata863">
+                          <rdf:RDF>
+                            <cc:Work
+                               rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type
+                                 rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                              <dc:title></dc:title>
+                            </cc:Work>
+                          </rdf:RDF>
+                        </metadata>
+                        <defs
+                           id="defs861" />
+                        <g
+                           fill="none"
+                           fill-rule="evenodd"
+                           id="g855">
+                          <path
+                             d="M0 0h24v24H0z"
+                             id="path849" />
+                          <path
+                             d="M3.5 21h17a1.5 1.5 0 001.5-1.5v-11A1.5 1.5 0 0020.5 7H10L7.44 4.44A1.5 1.5 0 006.378 4H3.5A1.5 1.5 0 002 5.5v14A1.5 1.5 0 003.5 21z"
+                             fill="#335EEA"
+                             opacity=".3"
+                             id="path851"
+                             style="fill:#fdc947;fill-opacity:1" />
+                          <path
+                             d="M8.637 16.463A3.5 3.5 0 1113.965 13H15a2 2 0 110 4h-5a1.993 1.993 0 01-1.363-.537z"
+                             fill="#335EEA"
+                             id="path853"
+                             style="fill:#fdc947;fill-opacity:1" />
+                        </g>
+                      </svg>
+
+                    </div>         
+                    <div class="mr-auto">
+                      <p class="font-weight-bold mb-0">
+                        Documents de livraison digitalisés
+                      </p>
+                      <p class="font-size-sm text-muted mb-0">
+                        Réservez un jockey en moins d'une minute
+                      </p>
+                    </div>
+                  </div>
+				          <div class="list-group-item-action d-flex align-items-center p-2">
+                    <div class="icon m-2 p-2 text-primary">
+                      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                      <svg
+                         xmlns:dc="http://purl.org/dc/elements/1.1/"
+                         xmlns:cc="http://creativecommons.org/ns#"
+                         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                         xmlns:svg="http://www.w3.org/2000/svg"
+                         xmlns="http://www.w3.org/2000/svg"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         version="1.1"
+                         id="svg841">
+                        <metadata
+                           id="metadata847">
+                          <rdf:RDF>
+                            <cc:Work
+                               rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type
+                                 rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                              <dc:title></dc:title>
+                            </cc:Work>
+                          </rdf:RDF>
+                        </metadata>
+                        <defs
+                           id="defs845" />
+                        <g
+                           fill="none"
+                           fill-rule="evenodd"
+                           id="g839">
+                          <path
+                             d="M 0,0 H 24 V 24 H 0 Z"
+                             id="path833" />
+                          <path
+                             d="m 4,6 h 16 a 1,1 0 0 1 1,1 V 8 A 1,1 0 0 1 20,9 H 4 A 1,1 0 0 1 3,8 V 7 A 1,1 0 0 1 4,6 Z m 1,5 h 5 a 1,1 0 0 1 1,1 v 7 a 1,1 0 0 1 -1,1 H 5 A 1,1 0 0 1 4,19 v -7 a 1,1 0 0 1 1,-1 z m 9,0 h 5 a 1,1 0 0 1 1,1 v 7 a 1,1 0 0 1 -1,1 h -5 a 1,1 0 0 1 -1,-1 v -7 a 1,1 0 0 1 1,-1 z"
+                             fill="#335eea"
+                             id="path835"
+                             style="fill:#fdc947;fill-opacity:1" />
+                          <path
+                             d="m 14.445,2.168 a 1.0001245,1.0001245 0 0 1 1.11,1.664 L 12,6.202 8.445,3.832 A 1.0001245,1.0001245 0 0 1 9.555,2.168 L 12,3.798 Z"
+                             fill="#335eea"
+                             opacity="0.3"
+                             id="path837"
+                             style="fill:#fdc947;fill-opacity:1" />
+                        </g>
+                      </svg>
+
+                    </div>           
+                    <div class="mr-auto">
+                      <p class="font-weight-bold mb-0">
+                        Un nouveau service pour vos clients
+                      </p>
+                      <p class="font-size-sm text-muted mb-0">
+                        Réservez un jockey en moins d'une minute
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-8 py-md-11">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-4 text-center" data-aos="fade-up">
+        
+              <!-- Icon -->
+              <div class="mb-5" id='bouclier'>
+              </div>
+              <h3>
+                Assurance
+              </h3>
+
+              <!-- Text -->
+              <p class="text-muted mb-6 mb-md-0">
+                L'ensemble des prestations sont couvertes par l'assureur <span id="allianz"></span>
+              </p>
+
+            </div>
+            <div class="col-12 col-md-4 text-center" data-aos="fade-up" data-aos-delay="50">
+
+              <!-- Icon -->
+              <div class="mb-5" id="facemask">
+              </div>
+              <h3>
+                Sureté
+              </h3>
+
+              <!-- Text -->
+              <p class="text-muted mb-6 mb-md-0">
+                Respect des mesures sanitaires
+              </p>
+
+            </div>
+      
+            <div class="col-12 col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+          
+              <!-- Icon -->
+              <div class="mb-5" id="customerreview">
+              </div>
+              <h3>
+                Qualité
+              </h3>
+
+              <!-- Text -->
+              <p class="text-muted mb-0">
+                Satisfaction client : <span class="text-dark"><b>98%</b></span> des automobilistes réutilisent nos services
+              </p>
+
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+
+    </section>
+
+    <!-- REGISTRATION
+    ================================================== -->
+    <section class="py-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+      
+            <!-- Card -->
+            <div class="card card-border border-secondary shadow-light-lg" data-jarallax-element="-40">
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-xl-11">
+          
+                    <!-- Heading -->
+                    <h2 class="font-weight-bold text-center mb-1">
+                      Vous avez une requête ?
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+                      Nous prendrons contact avec vous dans les plus brefs délais
+                    </p>
+
+                    <!-- Form -->
+                    <form action="https://formsubmit.co/070688fd3b91e3b1c100b38a2392c6d2" method="POST" />
+
+                      <input type="hidden" name="_webhook" value="https://script.google.com/macros/s/AKfycbywJpSut4RXrRnCmV41j-Q7JbuhrkC9g05sOZ8uJJ2uZFYLk-U/exec">
+                      <input type="hidden" name="_next" value="https://convoicar.fr/thanks.html">
+                      <input type="hidden" name="_subject" value="Nouveau Contact Brikks">
+                      <input type="hidden" name="_captcha" value="true">
+
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+
+                          <!-- First name -->
+                          <div class="form-group">
+                            <input type="text" name="firstName" class="form-control" id="registrationFirstName" placeholder="Prénom *" required>
+                            <!-- <label for="registrationFirstName">Prénom</label> -->
+                          </div>
+
+                        </div>
+                        <div class="col-12 col-md-6">
+
+                          <!-- Last name -->
+                          <div class="form-group">
+                            <input type="text" name="lastName" class="form-control" id="registrationLastName" placeholder="Nom *" required>
+                            <!-- <label for="registrationLastName">Nom</label> -->
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+
+                          <div class="form-group">
+                            <input type="number" name="codePostal" class="form-control" id="registrationFirstName" placeholder="Code Postal *" required>
+                            <!-- <label for="registrationFirstName">Code Postal</label> -->
+                          </div>
+
+                        </div>
+                        <div class="col-12 col-md-6">
+
+                          <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" id="registrationLastName" placeholder="Téléphone *" required>
+                            <!-- <label for="registrationLastName">Téléphone</label> -->
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-12">
+                          <!-- Email -->
+                          <div class="form-group">
+                            <input type="email" name="email" class="form-control" id="registrationEmail" placeholder="Email *" required>
+                            <!-- <label for="registrationEmail">Email</label> -->
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-group">
+                            <!-- <label for="vous">Vous êtes ?</label> -->
+                            <select id="vous" name="profession" type="text" class="custom-select" placeholder="Vous êtes? *" required>
+                              <option hidden>Vous êtes ?</option>
+                              <option>professionnel de l'auto</option>
+                              <option>gestionnaire de flotte</option>
+                              <option>automobiliste</option>   
+                              <option>autre</option>  
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-group">
+                            <!-- <label for="contactMessage">
+                              Message
+                            </label> -->
+                            <textarea class="form-control" name="message" id="contactMessage" rows="2" placeholder="Message"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row justify-content-center">
+                        <div class="col-12">
+                    
+                          <!-- Submit -->
+                          <button type = "submit" class="btn btn-block btn-primary mt-3 lift">
+                            Découvrir BRIKKS
+                          </button>
+
+                        </div>
+                      </div>
+
+                    </form>
+            
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- CURVE
+    ================================================== -->
+    <div class="position-relative mt-n16">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div>
+    </div>
+
+    <!-- FOOTER
+    ================================================== -->
+    <section class="pt-16 bg-dark">
+      <footer class="py-8 py-md-11 bg-dark border-top border-yellow-10">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+        
+              <!-- Brand -->
+              <a href=".">
+              <img src="./assets/img/brikks.svg" class="footer-brand mb-4">
+              </a>
+        
+              <br/>
+
+              <!-- Social -->
+                <li class="list-inline-item list-social-item mr-3">
+                  <a href="https://twitter.com/convoicar" class="text-decoration-none" target="_blank">
+                    <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                  </a>
+                </li>
+                <li class="list-inline-item list-social-item mr-3">
+                  <a href="https://fr.linkedin.com/company/convoicar" class="text-decoration-none" target="_blank">
+                    <img src="./assets/img/icons/social/linkedin.svg" class="list-social-icon" alt="...">
+                  </a>
+                </li>
+                <li class="list-inline-item list-social-item mr-3">
+                  <a href="https://fr-fr.facebook.com/convoicar/" class="text-decoration-none" target="_blank">
+                    <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+        
+              <!-- Heading -->
+              <h6 class="font-weight-bold text-white-80">
+                À propos
+              </h6>
+
+              <!-- List -->
+              <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+                <li class="mb-3">
+                  <a href="./qui-sommes-nous" class="text-white">
+                    Qui sommes-nous ?
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="./devenir-jockey" class="text-white">
+                    Devenir Jockey
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="https://convoicar1.recruitee.com" target="_blank" class="text-white">
+                    Nous rejoindre
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="./contact" class="text-white">
+                    Nous contacter
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="./contact" class="text-white">
+                    Presse
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2"> 
+              <!-- Heading -->
+              <h6 class="font-weight-bold text-white-80">
+                Services
+              </h6>
+
+              <!-- List -->
+              <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+                <li class="mb-3">
+                  <a href="./service-gestion-mobilite-douce" class="text-white">
+                    Gestion de la mobilité douce
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="./service-gestion-vehicule-courtoisie" class="text-white">
+                    Gestion des véhicules de courtoisie
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="./service-gestion-de-jockey" class="text-white">
+                    Gestion des services de jockey
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2"> 
+              <!-- Heading -->
+              <h6 class="font-weight-bold text-white-80">
+                Offre
+              </h6>
+
+              <!-- List -->
+              <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+                <li class="mb-3">
+                  <a href="./la-plateforme" class="text-white">
+                    Plateforme de gestion
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="./audit-besoins" class="text-white">
+                    Audit des besoins de mobilité
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="./offre-jockey" class="text-white">
+                    Service de jockey externalisé
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2"> 
+              <!-- Heading -->
+              <h6 class="font-weight-bold text-white-80">
+                Legal
+              </h6>
+
+              <!-- List -->
+              <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+                <li class="mb-3">
+                  <a href="./mentions.html" class="text-white">
+                    Mentions légales
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="./cgu-convoicar.html" class="text-white">
+                    CGU
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-white">
+                    Cookies
+                  </a>
+                </li>
+                <li>
+                  <a href="./rgpd.html" class="text-white">
+                    RGPD
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </footer>
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="https://cmp.osano.com/AzZcpNSDwYyRz3UA5/41b1be66-bc64-43ec-a663-2ab627acbaf2/osano.js"></script>
+
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="./assets/libs/lodash/lodash.min.js"></script>
+    <script src="./assets/libs/cloudinary-core/cloudinary-core.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+      
+  </body>
+</html>
