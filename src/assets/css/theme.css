@@ -11150,7 +11150,13 @@ a.card, a.card-body, a.card-footer, a.card-meta {
     font-size: 1.0625rem; } }
 
 .navbar-nav .nav-link {
+  color: #000 !important;
+  font-size: 1rem;
+  font-weight: 400 !important;
   font-weight: 600; }
+  .navbar-nav .nav-link i {
+    position: relative;
+    top: 2px; }
   .navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
     outline: none; }
 
@@ -11239,6 +11245,9 @@ a.card, a.card-body, a.card-footer, a.card-meta {
     margin-right: 0;
     padding-left: 0;
     padding-right: 0; } }
+
+.navbar-nav .dropdown-link {
+  white-space: nowrap; }
 
 .navbar-nav .dropdown > .dropdown-toggle::after {
   display: none; }
@@ -11689,6 +11698,26 @@ code {
     transform: rotateY(35deg) rotateX(15deg);
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden; }
+
+.img-alternative {
+  width: 100%;
+  height: 400px;
+  background: no-repeat center center;
+  background-size: contain;
+  -webkit-animation: bgChange infinite 8s;
+          animation: bgChange infinite 8s; }
+
+@-webkit-keyframes bgChange {
+  0%, 20% {
+    background-image: url("../img/anim-home-brikks.png"); }
+  50%, 100% {
+    background-image: url("../img/anim-home-brikks2.png"); } }
+
+@keyframes bgChange {
+  0%, 20% {
+    background-image: url("../img/anim-home-brikks.png"); }
+  50%, 100% {
+    background-image: url("../img/anim-home-brikks2.png"); } }
 
 .overlay {
   position: relative; }
