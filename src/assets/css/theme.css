@@ -3,7 +3,7 @@
  * to ensure cascade of styles.
  */
 /*!
- * Bootstrap v4.6.0 (https://getbootstrap.com/)
+ * Bootstrap v4.6.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -1465,9 +1465,6 @@ pre {
   .form-control::-ms-expand {
     background-color: transparent;
     border: 0; }
-  .form-control:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #000000; }
   .form-control:focus {
     color: #000000;
     background-color: #FFFFFF;
@@ -1493,6 +1490,10 @@ input[type="month"].form-control {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none; }
+
+select.form-control:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000000; }
 
 select.form-control:focus::-ms-value {
   color: #000000;
@@ -2751,16 +2752,21 @@ input[type="button"].btn-block {
     display: flex;
     align-items: center; }
     .input-group > .custom-file:not(:last-child) .custom-file-label,
+    .input-group > .custom-file:not(:last-child) .custom-file-label::after {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
     .input-group > .custom-file:not(:first-child) .custom-file-label {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
   .input-group:not(.has-validation) > .form-control:not(:last-child),
   .input-group:not(.has-validation) > .custom-select:not(:last-child),
+  .input-group:not(.has-validation) > .custom-file:not(:last-child) .custom-file-label,
   .input-group:not(.has-validation) > .custom-file:not(:last-child) .custom-file-label::after {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
   .input-group.has-validation > .form-control:nth-last-child(n + 3),
   .input-group.has-validation > .custom-select:nth-last-child(n + 3),
+  .input-group.has-validation > .custom-file:nth-last-child(n + 3) .custom-file-label,
   .input-group.has-validation > .custom-file:nth-last-child(n + 3) .custom-file-label::after {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
@@ -4917,8 +4923,11 @@ a.close.disabled {
   align-items: center;
   justify-content: center;
   width: 15%;
+  padding: 0;
   color: #FFFFFF;
   text-align: center;
+  background: none;
+  border: 0;
   opacity: 0.5;
   transition: opacity 0.15s ease; }
   @media (prefers-reduced-motion: reduce) {
@@ -5008,7 +5017,7 @@ a.close.disabled {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  vertical-align: text-bottom;
+  vertical-align: -0.125em;
   border: 0.25em solid currentColor;
   border-right-color: transparent;
   border-radius: 50%;
@@ -5038,7 +5047,7 @@ a.close.disabled {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  vertical-align: text-bottom;
+  vertical-align: -0.125em;
   background-color: currentColor;
   border-radius: 50%;
   opacity: 0;
@@ -5893,6 +5902,7 @@ button.bg-white:focus {
   position: fixed !important; }
 
 .position-sticky {
+  position: -webkit-sticky !important;
   position: sticky !important; }
 
 .fixed-top {
@@ -5909,8 +5919,9 @@ button.bg-white:focus {
   left: 0;
   z-index: 1030; }
 
-@supports (position: sticky) {
+@supports ((position: -webkit-sticky) or (position: sticky)) {
   .sticky-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020; } }
@@ -10073,8 +10084,6 @@ a.text-white:hover, a.text-white:focus {
   blockquote {
     border: 1px solid #ABBCD5;
     page-break-inside: avoid; }
-  thead {
-    display: table-header-group; }
   tr,
   img {
     page-break-inside: avoid; }
@@ -11841,6 +11850,7 @@ code {
   .position-sm-fixed {
     position: fixed !important; }
   .position-sm-sticky {
+    position: -webkit-sticky !important;
     position: sticky !important; } }
 
 @media (min-width: 768px) {
@@ -11853,6 +11863,7 @@ code {
   .position-md-fixed {
     position: fixed !important; }
   .position-md-sticky {
+    position: -webkit-sticky !important;
     position: sticky !important; } }
 
 @media (min-width: 992px) {
@@ -11865,6 +11876,7 @@ code {
   .position-lg-fixed {
     position: fixed !important; }
   .position-lg-sticky {
+    position: -webkit-sticky !important;
     position: sticky !important; } }
 
 @media (min-width: 1200px) {
@@ -11877,6 +11889,7 @@ code {
   .position-xl-fixed {
     position: fixed !important; }
   .position-xl-sticky {
+    position: -webkit-sticky !important;
     position: sticky !important; } }
 
 .shadow-light {
