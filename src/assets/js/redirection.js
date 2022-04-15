@@ -2,13 +2,13 @@
 'use strict';
 
 (function() {
-    console.log(window.location.pathname)
     if (window.location.hostname == "convoicar.fr"){
         var pathname = window.location.pathname
-
-        if(pathname == "/audit-besoins"){
+        if(pathname = "/"){
+            "http://brikks.co/"
+        }else if(pathname == "/audit-besoins"){
             window.location.href = "http://brikks.co/audit-mobilite-en-concession"
-        } else if(pathname == "/cgu-convoicar"){
+        }else if(pathname == "/cgu-convoicar"){
             window.location.href = "http://brikks.co/cgu-convoicar"
         }else if(pathname == "/contact"){
             window.location.href = "http://brikks.co/contact"
