@@ -4,7 +4,7 @@
 (function() {
     if (window.location.hostname == "convoicar.fr"){
         var pathname = window.location.pathname
-        if(pathname = "/"){
+        if(pathname == "/"){
             window.location.href = "http://brikks.co/"
         }else if(pathname == "/audit-besoins"){
             window.location.href = "http://brikks.co/audit-mobilite-en-concession"
