@@ -11,7 +11,7 @@
   //
 
   // Selectors
-  var drops = document.querySelectorAll('.navbar-nav .dropdown .navbar-nav .dropright');
+  var drops = document.querySelectorAll('.navbar-nav .dropdown, .navbar-nav .dropright');
 
   // Events
   var showEvents = ['mouseenter'];
