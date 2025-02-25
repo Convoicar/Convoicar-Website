@@ -110,8 +110,8 @@ gulp.task('browsersync', function(callback) {
         req.url = '/qui-sommes-nous.html';
       } else if (req.url === '/convoicar-pour-les-pros/logo-en-ligne-convoicar') {
         req.url = '/service-de-jockey-apres-vente.html';
-      } else if (req.url === '/contact') {
-        req.url = '/contact.html';
+      } else if (req.url === '/contact-client') {
+        req.url = '/contact-client.html';
       } else if (req.url === '/convoicar-pour-les-pros/main/') {
         req.url = '/service-de-jockey-apres-vente.html';
       }     
