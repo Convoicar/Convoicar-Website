@@ -20,7 +20,8 @@
     "gulp-if": "^3.0.0",
     "gulp-npm-dist": "^1.0.3",
     "gulp-replace": "^1.0.0",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.0",
     "gulp-uglify": "^3.0.2",
     "gulp-useref": "^4.0.1"
   },
